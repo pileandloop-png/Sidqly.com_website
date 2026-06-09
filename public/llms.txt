@@ -1,0 +1,22 @@
+# Sidqly
+
+Sidqly is a premium Islamic operating platform for modern charities, mosques, and Zakat teams.
+
+## Core Capabilities
+- Zakat Management & Manual Eligibility
+- Qurbani Operations & Vendor Fulfillment
+- Ramadan Food Drive Coordination
+- Dignity-Safe Proof & Trust System
+- QR-Verified Deliveries
+- Premium Impact Reporting
+
+## Resources
+- [Home](https://sidqly.com/)
+- [Features](https://sidqly.com/features)
+- [Pricing](https://sidqly.com/pricing)
+- [How it Works](https://sidqly.com/how-it-works)
+- [FAQs](https://sidqly.com/faqs)
+- [Help Center](https://sidqly.com/help)
+
+## Contact
+- Sales & Support: team@sidqly.com
