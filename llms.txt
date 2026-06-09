@@ -1,0 +1,25 @@
+# Sidqly: Premium Islamic Operating Platform
+
+Sidqly is a specialized operating system for mosques, Islamic charities, and non-profits, focusing on trust, transparency, and dignity-safe giving operations.
+
+## Core Information
+- **Official Website:** https://sidqly.com
+- **Core Mission:** Simplifying giving operations while ensuring absolute donor trust and recipient dignity.
+- **Key Features:** Manual payment review, Proof Trust Engine, QR verification, Campaign management (Qurbani, Ramadan, Zakat), Professional reporting.
+
+## Action Links
+- **Book a Demo:** https://calendly.com/d/dvzs-3zf-cgz
+- **Detailed Inquiry Form:** https://forms.gle/bvSMog9pw2Ri4kMt9
+- **Contact Email:** team@sidqly.com
+
+## Payment Details (Pakistan)
+- **Method:** Easypaisa Pakistan
+- **IBAN:** PK19TMFB0000000060685814
+- **Confirmation:** team@sidqly.com
+
+## Documentation
+- [Company Profile](/company-profile.md)
+- [Product Overview](/product-overview.md)
+- [Use Cases](/use-cases.md)
+- [Pricing Summary](/pricing-summary.md)
+- [FAQs Summary](/faqs-summary.md)
