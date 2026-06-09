@@ -1,0 +1,18 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#0F4D3E"/>
+  <path d="M0 0H1200V630H0V0Z" fill="url(#paint0_linear)"/>
+  <g transform="translate(400, 150) scale(10)">
+    <path d="M20 2L32.7279 7.27208L38 20L32.7279 32.7279L20 38L7.27208 32.7279L2 20L7.27208 7.27208L20 2Z" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="2.5" fill="none"/>
+    <path d="M22 12C19.5 12 17.5 14 17.5 16.5C17.5 19 19.5 21 22 21C23.5 21 24.8 20.3 25.6 19.2C24.5 19.6 23.3 19.6 22.3 19C21 18.2 20.7 16.3 21.3 15C21.6 14.3 22.3 14 23 14C22.7 12.7 21.5 12 22 12" fill="#D4AF37"/>
+    <path d="M12 20L17 25L28 14" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="600" y="480" text-anchor="middle" font-family="Inter, sans-serif" font-weight="700" font-size="80" fill="#FFFFFF">Sidqly</text>
+  <text x="600" y="550" text-anchor="middle" font-family="Inter, sans-serif" font-weight="400" font-size="32" fill="#A7F3D0">Verified giving. Protected dignity. Clear impact.</text>
+  <defs>
+    <linearGradient id="paint0_linear" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F4D3E"/>
+      <stop offset="0.55" stop-color="#15803D"/>
+      <stop offset="1.4" stop-color="#D4AF37"/>
+    </linearGradient>
+  </defs>
+</svg>
