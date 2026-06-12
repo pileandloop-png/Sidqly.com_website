@@ -3,6 +3,7 @@ import SEO from '../components/SEO';
 import { Shield, Eye, Lock, FileCheck, CheckCircle2 } from 'lucide-react';
 import ProofTrustEngine from '../components/diagrams/ProofTrustEngine';
 import ZakatSeparation from '../components/diagrams/ZakatSeparation';
+import DignitySafeBoundary from '../components/diagrams/DignitySafeBoundary';
 
 const TrustCenter: React.FC = () => {
   return (
@@ -74,6 +75,9 @@ const TrustCenter: React.FC = () => {
 
       <section className="py-20 bg-sidqly-ivory">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="mb-20">
+             <DignitySafeBoundary />
+          </div>
           <div className="mb-20">
              <ProofTrustEngine />
           </div>

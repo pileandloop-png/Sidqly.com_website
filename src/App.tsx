@@ -22,6 +22,13 @@ import Terms from './pages/Terms';
 import Accessibility from './pages/Accessibility';
 import Billing from './pages/Billing';
 import Help from './pages/Help';
+import StartPilot from './pages/StartPilot';
+import Implementation from './pages/Implementation';
+import Migration from './pages/Migration';
+import Purchase from './pages/Purchase';
+import Status from './pages/Status';
+import Legal from './pages/Legal';
+import ThankYou from './pages/ThankYou';
 
 // Dynamic Templates
 import BlogIndex from './pages/blog/BlogIndex';
@@ -96,6 +103,12 @@ function App() {
             <Route path="trust-center" element={<TrustCenter />} />
             <Route path="accessibility" element={<Accessibility />} />
             <Route path="billing" element={<Billing />} />
+            <Route path="start-pilot" element={<StartPilot />} />
+            <Route path="implementation" element={<Implementation />} />
+            <Route path="migration" element={<Migration />} />
+            <Route path="purchase" element={<Purchase />} />
+            <Route path="status" element={<Status />} />
+            <Route path="legal" element={<Legal />} />
 
             {/* Solutions Routes */}
             <Route path="solutions" element={<Solutions />} />
@@ -110,10 +123,10 @@ function App() {
             <Route path="blog/:slug" element={<BlogPost />} />
 
             {/* Thank You Routes */}
-            <Route path="thank-you" element={<Placeholder title="Thank You" />} />
-            <Route path="thank-you/demo" element={<Placeholder title="Thank You for Booking a Demo" />} />
-            <Route path="thank-you/contact" element={<Placeholder title="Thank You for Contacting Us" />} />
-            <Route path="thank-you/pricing" element={<Placeholder title="Thank You for Your Interest" />} />
+            <Route path="thank-you" element={<ThankYou />} />
+            <Route path="thank-you/demo" element={<ThankYou type="demo" />} />
+            <Route path="thank-you/contact" element={<ThankYou type="contact" />} />
+            <Route path="thank-you/pricing" element={<ThankYou type="pricing" />} />
 
             {/* Comparison / GEO / LLMO Routes */}
             <Route path="why-sidqly" element={<CompareDetail />} />
