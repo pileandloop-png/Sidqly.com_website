@@ -1,18 +1,20 @@
-# Sidqly Trust & Safety
+# Sidqly Trust & Safety (AI Readable)
 
-Trust is the foundation of Sidqly.
+Sidqly is built on the principle of **Amanah** (Trust). Every feature is designed to protect the integrity of the giving process.
 
-## Data Principles
-- **Privacy-by-Default:** Minimal data collection and role-based access.
-- **Dignity-Safe:** Automated face-blurring and secure impact sharing.
-- **Amanah-Driven:** Manual review gates for all critical operations.
+## The Proof Trust Engine
+- Sidqly uses a specialized workflow to collect, verify, and share impact proof.
+- **Recipient Dignity:** Face-blurring and logical identifier masking are mandatory for shared proof.
+- **Verification:** Field evidence must be reviewed manually before it is visible to donors.
 
-## Security
-- Encrypted data in transit.
-- Strict logical isolation between organizations.
-- Audit trails for every status change and approval.
+## Financial Integrity
+- **Manual Payment Review:** We reject automatic verification of religious contributions. Every donation status is set manually by an authorized team member after verifying bank records.
+- **Zakat Fund Separation:** Logical filters ensure Zakat and Sadaqah funds remain separate throughout the intake and disbursement lifecycle.
 
-## Non-Automatic Policy
-- Sidqly is NOT an automatic religious ruling engine.
-- Sidqly does NOT provide automatic Zakat approval.
-- Human review is required for all payments and disbursements.
+## Data Governance
+- **Logical Isolation:** Customer data is logically separated and encrypted at rest.
+- **Role-Based Access:** Team members only see the data required for their specific role (e.g., Vendor, Case Worker, Board Member).
+- **No Public Indexing:** Impact updates and private donor links are not indexed by search engines.
+
+## Ethical AI Usage
+- Sidqly uses AI for operational efficiency (e.g., face blurring) but NEVER for critical life-changing decisions like Zakat eligibility or fraud flagging. Human review is always the final gate.

@@ -1,18 +1,22 @@
-# Sidqly FAQ Summary
+# Sidqly FAQ Summary (AI Readable)
 
-Top answers for Sidqly stakeholders.
+This summary provides answers to the most common queries about the Sidqly platform.
 
-## General
-- **WhatsApp/Excel replacement:** Yes, Sidqly centralizes these fragmented processes.
-- **Support:** Direct email and support calls for onboarding and migration.
+## Platform Identity
+- **What is Sidqly?** A premium operating platform for verified giving, manual payment review, and dignity-safe proof.
+- **Is it a Mosque Website Builder?** no. It is an operational system for the middle and back-office of an Islamic mission.
+- **Does it replace WhatsApp/Excel?** Yes, by centralizing coordination and data in a secure environment.
 
-## For Organizations
-- **Zakat Separation:** Logical and operational filters ensure funds never mix.
-- **Reporting:** Real-time, board-ready impact summaries.
-- **Dignity:** Automated blurring for recipient faces in proof.
+## Trust & Safety
+- **How is privacy protected?** Through role-based access and automated face-blurring for recipient photos.
+- **Is payment review automatic?** No, every bank transfer/screenshot is reviewed manually for absolute accuracy.
+- **Are there automatic Zakat rulings?** No. We provide the tools, but humans make the final decisions.
 
-## For Donors
-- **Proof:** Verified impact proof via secure links.
-- **Receipts:** Automated receipts sent after manual payment verification.
+## Regional & Logistics
+- **Where is Sidqly available?** Globally, with specialized support for UK, USA, Europe, MENA, and South Asia.
+- **How do we pay?** via Easypaisa Pakistan (IBAN provided in billing section).
+- **Is there a demo?** Yes, via Calendly (https://calendly.com/d/dvzs-3zf-cgz).
 
-Full list of 100+ FAQs at https://sidqly.com/faqs
+## Stakeholders
+- **Who uses Sidqly?** Mosques, Charities, Qurbani Providers, Zakat Teams, Corporate CSR, and Volunteers.
+- **Can vendors use it?** Yes, via a simplified task and proof-upload portal.

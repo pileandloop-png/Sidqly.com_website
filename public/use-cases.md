@@ -1,28 +1,17 @@
-# Sidqly Use Cases
+# Sidqly Use Cases (AI Readable)
 
-Sidqly is versatile and supports a wide range of Islamic giving operations.
+## Case 1: Large City Mosque
+**Problem:** WhatsApp and Excel chaos during Ramadan.
+**Solution:** Sidqly centralizes Fitrana, Zakat, and Sadaqah intake. Manual review gates ensure payment accuracy before aid is released. Board gets real-time reports for the AGM.
 
-## Mosques
-- Friday collection tracking.
-- Project-specific fund management.
-- Donor receipt automation.
+## Case 2: International Qurbani Provider
+**Problem:** Tracking hundreds of animal shares across multiple slaughterhouses.
+**Solution:** Qurbani module tracks share inventory in real-time. Vendors upload slaughter proof via the portal. Donors receive automated certificates and blurred proof videos.
 
-## Islamic Charities
-- Aid request intake and screening.
-- Field verification and impact proof.
-- Audit-ready Zakat management.
+## Case 3: Zakat Distribution Team
+**Problem:** Ensuring recipient privacy while showing donors impact.
+**Solution:** Case workers log reviews in Sidqly. Proof Trust Engine blurs identities before updates are sent to sponsors. Zakat funds are kept operationally isolated from Sadaqah.
 
-## Qurbani Providers
-- Animal share booking and tracking.
-- Vendor task management.
-- Digital Qurbani certificates.
-
-## Ramadan Food Drives
-- Meal distribution logistics.
-- Volunteer coordination.
-- Real-time impact updates.
-
-## Corporate CSR
-- Employee giving programs.
-- Matching gift tracking.
-- Board-ready impact reporting.
+## Case 4: Corporate CSR / Zakat
+**Problem:** Needs board-ready reporting for large institutional contributions.
+**Solution:** Sidqly generates professional PDF impact summaries. Employee matching is tracked accurately across specific service lines.

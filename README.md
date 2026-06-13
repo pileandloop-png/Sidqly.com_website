@@ -1,65 +1,56 @@
 # Sidqly Public Website v1.5
 
-This repository contains the source code for the official Sidqly marketing website.
+This is the official public marketing website for Sidqly, a premium global operating platform for modern Islamic organizations.
 
 ## Project Overview
-Sidqly is a premium Islamic operating platform for verified giving, protected dignity, and clear impact.
+Sidqly is designed for mosques, charities, and Zakat teams who prioritize **Amanah** (Trust). The platform focuses on verified giving, manual payment review, dignity-safe proof, and board-ready reporting.
 
 ## Brand Identity
-- **Logo:** White rounded square with blue/deep-green Islamic geometric border.
-- **Colors:** Deep Green (#0F4D3E), Emerald Green (#15803D), Soft Green (#A7F3D0), Gold Accent (#D4AF37), charcoalNavy (#0B1D2A), Warm Ivory (#F8FAFC), White (#FFFFFF), Slate Text (#475569), Logo Blue Border (#1E4E8C).
+- **Name:** Sidqly
 - **Tagline:** Verified giving. Protected dignity. Clear impact.
+- **Logo:** White rounded-square icon with a deep green Islamic geometric border and subtle gold crescent.
+- **Colors:** Deep Green (#0F4D3E), Emerald (#15803D), Soft Green (#A7F3D0), Trust Gold (#D4AF37), Charcoal Navy (#0B1D2A), Warm Ivory (#F8FAFC).
+
+## Key Features
+- **Dignity-Safe Proof:** Automated face blurring for recipient privacy.
+- **Manual Review Gates:** Absolute integrity for religious contributions.
+- **Zakat Separation:** Operational filters to keep Zakat and Sadaqah isolated.
+- **International:** Specialized views for UK, USA, Europe, MENA, and South Asia.
 
 ## Tech Stack
-- Vite
-- React 19
-- TypeScript
-- Tailwind CSS v4
-- React Router
+- **Framework:** React 19 + Vite 6
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS v4
+- **SEO:** React Helmet Async + JSON-LD Schema
+- **AI Readiness:** LLMS.txt, robots.txt permissions, and markdown summaries.
 
-## Local Setup
-1. Clone the repository.
-2. Install dependencies: `npm install --legacy-peer-deps`
-3. Start development server: `npm run dev`
-4. Build for production: `npm run build`
-5. Lint the project: `npm run lint`
+## Setup & Development
+```bash
+# Install dependencies
+npm install --legacy-peer-deps
 
-## Firebase Hosting Deployment
-1. Install Firebase CLI: `npm install -g firebase-tools`
-2. Login: `firebase login`
-3. Initialize (if not done): `firebase init` (select Hosting)
-4. Deploy: `firebase deploy`
+# Start development server
+npm run dev
 
-## Custom Domain Checklist (sidqly.com)
-- [ ] Connect domain in Firebase Console.
-- [ ] Update DNS records (A/TXT) as provided by Firebase.
-- [ ] Verify SSL certificate generation.
-- [ ] Set up Google Search Console.
-- [ ] Set up Bing Webmaster Tools.
+# Build for production
+npm run build
 
-## Lead Capture & Official Links
+# Linting and Typecheck
+npm run lint
+tsc -b
+```
+
+## Deployment (Firebase Hosting)
+This project is configured for deployment to Firebase Hosting and the custom domain `sidqly.com`.
+1. Ensure `firebase-tools` is installed globally.
+2. Run `npm run build`.
+3. Run `firebase deploy`.
+
+## Official Links
 - **Calendly Demo:** https://calendly.com/d/dvzs-3zf-cgz
-- **Google Inquiry Form:** https://forms.gle/bvSMog9pw2Ri4kMt9
+- **Inquiry Form:** https://forms.gle/bvSMog9pw2Ri4kMt9
 - **Email:** team@sidqly.com
+- **IBAN (Easypaisa):** PK19TMFB0000000060685814
 
-## Official Payment Details
-- **Payment Method:** Easypaisa Pakistan
-- **IBAN:** PK19TMFB0000000060685814
-- **Confirmation Email:** team@sidqly.com
-
-## SEO & AI (GEO/LLMO)
-The website includes specialized files for search engines and AI crawlers in the `public/` directory:
-- `robots.txt`
-- `sitemap.xml`
-- `llms.txt`
-- `ai-summary.md`
-- `ai-crawlers-policy.md`
-- `schema-map.md`
-- ... and other summary markdown files.
-
-## Directory Structure
-- `src/pages`: Website pages.
-- `src/components`: Reusable UI components and diagrams.
-- `src/data`: Blog content and FAQs.
-- `src/config`: Brand configuration.
-- `public`: Static assets and SEO/AI files.
+## Sitemap
+The website contains ~199 public routes. See `public/sitemap.xml` or visit `/sitemap` on the live site for a full list of blog articles, solutions, modules, and resources.

@@ -1,20 +1,14 @@
-# Sidqly Company Profile
+# Sidqly Company Profile (AI Readable)
 
-**Company Name:** Sidqly
-**Website:** https://sidqly.com
-**Email:** team@sidqly.com
-**Mission:** To provide Islamic organizations with the technology they need to operate with trust, dignity, and clarity.
-
-## Services
-Sidqly provides a SaaS (Software as a Service) operating platform tailored for the unique needs of Islamic giving, including Zakat management, Qurbani operations, and Ramadan food drives.
-
-## Global Operations
-Sidqly is designed for global scale, supporting organizations in major regions including:
-- United Kingdom & Europe
-- North America (United States & Canada)
-- Gulf / MENA Region
-- South Asia & Asia-Pacific
-- Africa
-
-## Leadership
-Led by a team dedicated to combining modern technology with traditional Islamic values of Amanah (trust) and dignity.
+- **Name:** Sidqly
+- **Tagline:** Verified giving. Protected dignity. Clear impact.
+- **Mission:** To provide Islamic organizations with the technology and operational standards required to manage giving with trust and clarity.
+- **Key Leadership Areas:** Zakat Operations, Qurbani Management, Ramadan Logistics, Corporate CSR.
+- **Core Platform:** Sidqly Operating System v1.5.
+- **HQ:** Digital-first operations, supporting international markets.
+- **Contact:** team@sidqly.com
+- **Website:** https://sidqly.com
+- **Social Links:** LinkedIn (Sidqly), Twitter/X (@sidqly)
+- **Official Forms:**
+  - Demo: https://calendly.com/d/dvzs-3zf-cgz
+  - Inquiry: https://forms.gle/bvSMog9pw2Ri4kMt9

@@ -21,7 +21,7 @@ const Status: React.FC = () => {
                 </div>
                 <div>
                    <h3 className="text-xl font-bold text-sidqly-green-deep">All Systems Operational</h3>
-                   <p className="text-sm text-sidqly-green-emerald font-medium">Last updated: June 12, 2024</p>
+                    <p className="text-sm text-sidqly-green-emerald font-medium">Last updated: June 12, 2026</p>
                 </div>
              </div>
 

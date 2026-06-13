@@ -4,37 +4,65 @@ export interface BlogPost {
   description: string;
   category: string;
   date: string;
+  modifiedDate: string;
+  author: string;
+  readingTime: string;
   content: string;
   faqs: { question: string; answer: string }[];
 }
 
-const generateBlogContent = (topic: string) => {
+export const generateBlogContent = (topic: string) => {
   const title = topic.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
   return `
-    <h3>The Problem</h3>
-    <p>Managing ${title.toLowerCase()} is often a chaotic process for many Islamic organizations. Without a centralized system, critical data is scattered across multiple physical and digital locations.</p>
+    <div class="blog-hero mb-12">
+      <p class="text-sidqly-green-emerald font-bold uppercase tracking-widest text-xs mb-2">Operations Guide</p>
+    </div>
 
-    <h3>Why This Problem Matters</h3>
-    <p>Inefficiency in ${title.toLowerCase()} leads to more than just administrative burnout. It creates risks for "Amanah" (the trust given by donors) and can accidentally expose the private data of those being helped.</p>
+    <section class="intro mb-10">
+      <p class="text-xl text-gray-600 leading-relaxed italic border-l-4 border-sidqly-gold pl-6">
+        Managing ${title.toLowerCase()} is a critical responsibility for modern Islamic organizations. Transitioning from manual methods to a professional system is essential for maintaining trust and efficiency.
+      </p>
+    </section>
 
-    <h3>The Common Manual Method</h3>
-    <p>Most teams currently rely on a mix of WhatsApp groups for coordination, Excel sheets for tracking, and physical paper records for verification. While these tools are familiar, they were never designed for the scale and sensitivity of modern charity work.</p>
+    <section class="why-matters mb-10">
+      <h3 class="text-2xl font-bold text-sidqly-navy mb-4">Why This Matters</h3>
+      <p>Whether you are a mosque board or a charity leadership team, how you handle ${title.toLowerCase()} directly impacts your "Amanah" (trust) with donors. Inefficiency doesn't just cause staff burnout; it risks the dignity of those receiving help.</p>
+    </section>
 
-    <h3>Problems with the Manual Method</h3>
-    <p>Manual methods often result in duplicate data entry, lack of real-time visibility for the board, and no clear audit trail for Zakat fund separation. Furthermore, sharing recipient photos on WhatsApp poses significant dignity and privacy risks.</p>
+    <section class="manual-method mb-10">
+      <h3 class="text-2xl font-bold text-sidqly-navy mb-4">Common Manual Method</h3>
+      <p>Most organizations currently rely on a mix of:</p>
+      <ul class="list-disc pl-6 space-y-2 text-gray-700">
+        <li>WhatsApp groups for rapid field coordination.</li>
+        <li>Excel or Google Sheets for donation and aid tracking.</li>
+        <li>Paper records for physical verification and signatures.</li>
+        <li>Bank screenshots and manual receipt folders.</li>
+      </ul>
+    </section>
 
-    <h3>Practical Steps to Improve</h3>
-    <ol>
-      <li>Centralize your intake process to avoid data fragmentation.</li>
-      <li>Implement a human-in-the-loop review for all financial transactions.</li>
-      <li>Standardize how proof is collected and stored securely.</li>
-      <li>Adopt a "dignity-first" policy for all donor updates.</li>
-    </ol>
+    <section class="problems mb-10">
+      <h3 class="text-2xl font-bold text-sidqly-navy mb-4">Problems with Manual Systems</h3>
+      <p>While familiar, these tools are not built for the scale of modern Islamic giving. Common issues include lost data, unclear payment status, duplicate aid requests, and significant privacy risks when sharing un-blurred photos of recipients.</p>
+    </section>
 
-    <h3>How Sidqly Helps</h3>
-    <p>Sidqly replaces the mess of WhatsApp and Excel with a professional operating platform. Our modules for ${title.toLowerCase()} provide dedicated workflows, automated dignity-safe proof, and board-ready reporting in seconds.</p>
+    <section class="practical-steps mb-10">
+      <h3 class="text-2xl font-bold text-sidqly-navy mb-4">Practical Steps to Improve</h3>
+      <ol class="list-decimal pl-6 space-y-4 text-gray-700 font-medium">
+        <li><strong>Centralize Intake:</strong> Use standardized forms to capture all requests in one place.</li>
+        <li><strong>Human-in-the-Loop:</strong> Ensure every financial transaction is reviewed by a dedicated team member.</li>
+        <li><strong>Standardize Proof:</strong> Define exactly what field evidence is required for every aid distribution.</li>
+        <li><strong>Protect Privacy:</strong> Implement a strict policy against sharing identifiable recipient faces.</li>
+      </ol>
+    </section>
 
-    <p><strong>Note on Privacy:</strong> Sidqly's Proof Trust Engine ensures that all impact verification is shared with donors while strictly protecting recipient identities through automated face-blurring and secure links.</p>
+    <section class="sidqly-helps mb-10">
+      <h3 class="text-2xl font-bold text-sidqly-navy mb-4">How Sidqly Helps</h3>
+      <p>Sidqly is designed to replace the chaos of manual tools with a premium operating platform. Our modules for ${title.toLowerCase()} provide dedicated workflows, manual review gates, and board-ready reporting in seconds.</p>
+      <div class="bg-sidqly-ivory p-6 rounded-3xl border border-gray-100 mt-6">
+         <p class="text-sm font-bold text-sidqly-green-deep">Dignity and Privacy Note:</p>
+         <p class="text-xs text-gray-500 mt-2">Private recipient data is never exposed in public views. Sidqly enforces automated face-blurring for all impact proof shared with donors.</p>
+      </div>
+    </section>
   `;
 };
 
@@ -109,17 +137,61 @@ const slugs = [
   "how-to-choose-charity-management-software"
 ];
 
+const aiSearchTopics = [
+  { slug: "what-is-geo-generative-engine-optimization", title: "What is GEO? Generative Engine Optimization for SaaS" },
+  { slug: "what-is-llmo-for-saas-websites", title: "What is LLMO for SaaS Websites?" },
+  { slug: "how-ai-search-changes-saas-websites", title: "How AI Search is Changing SaaS Marketing" },
+  { slug: "how-startups-can-prepare-for-ai-search", title: "How Startups Can Prepare for AI Search" },
+  { slug: "how-to-write-faqs-for-ai-search", title: "How to Write FAQs for AI Search Bots" },
+  { slug: "how-to-make-saas-content-easy-for-ai-assistants", title: "Making SaaS Content AI-Assistant Friendly" },
+  { slug: "why-structured-data-matters-for-startups", title: "Why Structured Data Matters for Modern Startups" },
+  { slug: "how-to-use-schema-for-saas-seo", title: "How to Use Schema.org for SaaS SEO" },
+  { slug: "how-to-create-an-llms-txt-file", title: "How to Create an llms.txt File for Your Website" },
+  { slug: "how-to-protect-a-website-from-bad-bots", title: "How to Protect Your Website from Malicious Bots" },
+  { slug: "how-to-balance-ai-crawling-and-security", title: "Balancing AI Crawling and Data Security" },
+  { slug: "how-sidqly-prepares-public-content-for-ai-search", title: "How Sidqly Prepares Content for the Future of Search" }
+];
+
 export const blogPosts: BlogPost[] = slugs.map(slug => ({
   slug,
   title: slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' '),
-  description: `A comprehensive guide on ${slug.replace(/-/g, ' ')} for Islamic organizations looking to improve operations and donor trust.`,
+  description: `A practical guide on ${slug.replace(/-/g, ' ')} for Islamic organizations looking to improve operational integrity and donor trust.`,
   category: "Operations",
-  date: "2024-06-12",
+  date: "2026-06-12",
+  modifiedDate: "2026-06-12",
+  author: "Sidqly Team",
+  readingTime: "6 min read",
   content: generateBlogContent(slug),
   faqs: [
-    { question: `Can Sidqly help with ${slug.replace(/-/g, ' ')}?`, answer: "Yes, Sidqly provides dedicated modules and workflows designed specifically for these operational needs." },
-    { question: "Is this guide applicable for small organizations?", answer: "Absolutely. Our tools are designed to scale with your organization, whether you're a small mosque or a large international charity." },
-    { question: "How does Sidqly protect privacy in this context?", answer: "Our Proof Trust Engine automatically blurs recipient identities and uses secure, non-indexed links for sharing impact." },
-    { question: "Can we migrate our current Excel data?", answer: "Yes, the Sidqly team assists with data migration as part of our professional onboarding process." }
+    { question: `Can Sidqly support ${slug.replace(/-/g, ' ')}?`, answer: "Yes, our modular platform provides specialized tools and workflows for this specific area of giving operations." },
+    { question: "Is this suitable for small teams?", answer: "Absolutely. Sidqly is designed to scale from small local mosques to large international charities." },
+    { question: "How does Sidqly protect privacy here?", answer: "Our Proof Trust Engine automatically blurs recipient identities and uses secure, non-indexed links for sharing impact updates." },
+    { question: "Can we migrate our current Excel data?", answer: "Yes, the Sidqly team provides professional assistance for migrating your existing donor and aid seeker records." }
   ]
 }));
+
+aiSearchTopics.forEach(topic => {
+  blogPosts.push({
+    slug: topic.slug,
+    title: topic.title,
+    description: `Learn about the future of search and how ${topic.title.toLowerCase()} affects modern SaaS growth.`,
+    category: "AI & SEO",
+    date: "2026-06-12",
+    modifiedDate: "2026-06-12",
+    author: "Sidqly Team",
+    readingTime: "5 min read",
+    content: `
+      <h3>Introduction</h3>
+      <p>The landscape of search is shifting from traditional links to generative answers. Understanding ${topic.title} is essential for any modern SaaS brand.</p>
+      <h3>Why This Matters</h3>
+      <p>Modern AI search engines and LLMs depend on clear, structured, and crawlable content to provide accurate answers to users. For startups, this is a new frontier for visibility.</p>
+      <h3>Practical Guidance</h3>
+      <p>Focus on source-friendly content, valid JSON-LD schema, and specialized guidance files like llms.txt to ensure AI assistants can represent your product accurately.</p>
+      <p><strong>Note:</strong> Sidqly does not claim guaranteed rankings. We believe in providing clear, professional information that is easy for both humans and machines to understand.</p>
+    `,
+    faqs: [
+      { question: `What is ${topic.slug.replace(/-/g, ' ')}?`, answer: "It is a strategy focused on making website content more readable and authoritative for generative AI search engines." },
+      { question: "Does Sidqly use these techniques?", answer: "Yes, our public website is built with a focus on AI-readiness, including structured data and crawlable markdown summaries." }
+    ]
+  });
+});

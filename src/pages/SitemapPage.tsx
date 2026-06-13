@@ -1,117 +1,160 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
-import { brand } from '../config/brand';
-import { ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { LayoutGrid, Target, ChevronRight, Search, Zap, Shield, HelpCircle, MapPin, Newspaper, Settings, Users, CreditCard, Star } from 'lucide-react';
+import { resources } from '../data/resources';
+import { blogPosts } from '../data/blogs';
 
 const SitemapPage: React.FC = () => {
-  const groups = [
-    {
-      title: "Core Pages",
-      links: [
-        { name: "Homepage", href: "/" },
-        { name: "About Sidqly", href: "/about" },
-        { name: "Features", href: "/features" },
-        { name: "Modules", href: "/modules" },
-        { name: "Solutions", href: "/solutions" },
-        { name: "How It Works", href: "/how-it-works" },
-        { name: "Pricing", href: "/pricing" }
-      ]
-    },
-    {
-      title: "Regional Support",
-      links: [
-        { name: "Global Regions", href: "/regions" },
-        { name: "United Kingdom", href: "/regions/united-kingdom" },
-        { name: "Europe", href: "/regions/europe" },
-        { name: "North America", href: "/regions/north-america" },
-        { name: "United States", href: "/regions/united-states" },
-        { name: "Canada", href: "/regions/canada" },
-        { name: "Gulf / MENA", href: "/regions/gulf-mena" },
-        { name: "South Asia", href: "/regions/south-asia" },
-        { name: "Africa", href: "/regions/africa" },
-        { name: "Asia-Pacific", href: "/regions/asia-pacific" }
-      ]
-    },
-    {
-      title: "Onboarding & Purchase",
-      links: [
-        { name: "How to Purchase", href: "/purchase" },
-        { name: "Start a Pilot", href: "/start-pilot" },
-        { name: "Implementation Guide", href: "/implementation" },
-        { name: "Migration Guide", href: "/migration" },
-        { name: "Platform Status", href: "/status" }
-      ]
-    },
-    {
-      title: "Trust & Legal",
-      links: [
-        { name: "Trust Center", href: "/trust-center" },
-        { name: "Security Standards", href: "/security" },
-        { name: "Privacy Policy", href: "/privacy" },
-        { name: "Terms of Service", href: "/terms" },
-        { name: "Legal & Compliance", href: "/legal" },
-        { name: "Billing & Payments", href: "/billing" },
-        { name: "Accessibility", href: "/accessibility" },
-        { name: "Brand Assets", href: "/brand" }
-      ]
-    },
-    {
-      title: "Resources & Help",
-      links: [
-        { name: "Blog & Guides", href: "/blog" },
-        { name: "Help Center", href: "/help" },
-        { name: "Frequently Asked Questions", href: "/faqs" },
-        { name: "Compare Sidqly", href: "/compare" }
-      ]
-    },
-    {
-      title: "Contact & Demo",
-      links: [
-        { name: "Book a Demo", href: "/book-demo" },
-        { name: "Inquiry Form", href: "/inquiry-form" },
-        { name: "Ask Sidqly", href: "/ask-sidqly" },
-        { name: "Contact Us", href: "/contact" }
-      ]
-    }
+  const corePages = [
+    { name: 'Home', path: '/', icon: LayoutGrid },
+    { name: 'Features', path: '/features', icon: Star },
+    { name: 'How It Works', path: '/how-it-works', icon: Zap },
+    { name: 'Pricing', path: '/pricing', icon: CreditCard },
+    { name: 'Book Demo', path: '/book-demo', icon: Users },
+    { name: 'Trust Center', path: '/trust-center', icon: Shield },
+    { name: 'Security', path: '/security', icon: Shield },
+    { name: 'Ask Sidqly (AI)', path: '/ask-sidqly', icon: Search },
+    { name: 'FAQ', path: '/faqs', icon: HelpCircle },
+    { name: 'Help Center', path: '/help', icon: HelpCircle },
+    { name: 'About', path: '/about', icon: Users },
+    { name: 'Contact', path: '/contact', icon: Users },
+    { name: 'Brand Kit', path: '/brand', icon: Settings },
+    { name: 'AI Search Readiness', path: '/ai-search-readiness', icon: Search },
+  ];
+
+  const regionPages = [
+    { name: 'United Kingdom', path: '/regions/united-kingdom' },
+    { name: 'North America', path: '/regions/north-america' },
+    { name: 'Europe', path: '/regions/europe' },
+    { name: 'Middle East', path: '/regions/middle-east' },
+    { name: 'South Asia', path: '/regions/south-asia' },
+    { name: 'Africa', path: '/regions/africa' },
+  ];
+
+  const solutionPages = [
+    { name: 'Mosques', path: '/solutions/mosques' },
+    { name: 'Islamic Charities', path: '/solutions/islamic-charities' },
+    { name: 'Qurbani Providers', path: '/solutions/qurbani-providers' },
+    { name: 'Ramadan Food Drives', path: '/solutions/ramadan-food-drives' },
+    { name: 'Zakat Teams', path: '/solutions/zakat-teams' },
+    { name: 'Corporate CSR/Zakat', path: '/solutions/corporate-csr-zakat' },
+    { name: 'Vendors', path: '/solutions/vendors' },
+    { name: 'Volunteers', path: '/solutions/volunteers' },
   ];
 
   return (
     <>
-      <SEO title="Sitemap" description="Explore all pages and resources on the Sidqly global operating platform." canonical="/sitemap" />
-      <section className="py-20 bg-sidqly-ivory min-h-screen">
+      <SEO title="Sitemap" description="Comprehensive list of all pages and resources on Sidqly." canonical="/sitemap" />
+      <section className="py-20 bg-sidqly-ivory">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h1 className="text-4xl md:text-5xl font-extrabold text-sidqly-navy mb-6">Website Sitemap</h1>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">A complete directory of the Sidqly public marketing website.</p>
+          <div className="mb-16 text-center">
+            <h1 className="text-4xl md:text-5xl font-extrabold text-sidqly-navy mb-4">Sitemap</h1>
+            <p className="text-xl text-gray-600">Navigate every corner of the Sidqly platform.</p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12 mb-20">
-            {groups.map((group) => (
-              <div key={group.title} className="bg-white p-8 rounded-[40px] border border-gray-100 shadow-sm">
-                <h3 className="text-xl font-bold text-sidqly-navy mb-8 flex items-center gap-3">
-                   <div className="w-1.5 h-6 bg-sidqly-green-emerald rounded-full"></div>
-                   {group.title}
-                </h3>
-                <ul className="space-y-4">
-                  {group.links.map((link) => (
-                    <li key={link.href}>
-                      <Link to={link.href} className="text-gray-500 hover:text-sidqly-green-deep font-medium text-sm flex items-center justify-between group">
-                         {link.name}
-                         <ArrowRight size={14} className="opacity-0 group-hover:opacity-100 transition-opacity" />
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 text-sidqly-navy">
+            {/* Core Pages */}
+            <div>
+              <h2 className="text-lg font-bold mb-6 flex items-center gap-2 border-b border-gray-200 pb-2">
+                <LayoutGrid size={20} className="text-sidqly-green-emerald" /> Core Pages
+              </h2>
+              <ul className="space-y-3">
+                {corePages.map(page => (
+                  <li key={page.path}>
+                    <Link to={page.path} className="text-gray-600 hover:text-sidqly-green-emerald transition-colors flex items-center gap-2 text-sm group">
+                      <ChevronRight size={14} className="group-hover:translate-x-1 transition-transform" /> {page.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Regions & Solutions */}
+            <div>
+              <h2 className="text-lg font-bold mb-6 flex items-center gap-2 border-b border-gray-200 pb-2">
+                <MapPin size={20} className="text-sidqly-green-emerald" /> Regions & Solutions
+              </h2>
+              <h3 className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-3">Global Regions</h3>
+              <ul className="space-y-3 mb-8">
+                {regionPages.map(page => (
+                  <li key={page.path}>
+                    <Link to={page.path} className="text-gray-600 hover:text-sidqly-green-emerald transition-colors flex items-center gap-2 text-sm group">
+                      <ChevronRight size={14} className="group-hover:translate-x-1 transition-transform" /> {page.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+              <h3 className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-3">Stakeholder Solutions</h3>
+              <ul className="space-y-3">
+                {solutionPages.map(page => (
+                  <li key={page.path}>
+                    <Link to={page.path} className="text-gray-600 hover:text-sidqly-green-emerald transition-colors flex items-center gap-2 text-sm group">
+                      <ChevronRight size={14} className="group-hover:translate-x-1 transition-transform" /> {page.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Resources & Strategy */}
+            <div>
+              <h2 className="text-lg font-bold mb-6 flex items-center gap-2 border-b border-gray-200 pb-2">
+                <Target size={20} className="text-sidqly-green-emerald" /> Resources & Strategy
+              </h2>
+              <ul className="space-y-3">
+                <li>
+                   <Link to="/resources" className="text-sidqly-green-deep font-bold hover:text-sidqly-green-emerald transition-colors flex items-center gap-2 text-sm group">
+                      <ChevronRight size={14} className="group-hover:translate-x-1 transition-transform" /> All Resources
+                   </Link>
+                </li>
+                {resources.map(resource => (
+                  <li key={resource.slug}>
+                    <Link to={`/resources/${resource.slug}`} className="text-gray-600 hover:text-sidqly-green-emerald transition-colors flex items-center gap-2 text-sm group">
+                      <ChevronRight size={14} className="group-hover:translate-x-1 transition-transform" /> {resource.title}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Latest Articles */}
+            <div>
+              <h2 className="text-lg font-bold mb-6 flex items-center gap-2 border-b border-gray-200 pb-2">
+                <Newspaper size={20} className="text-sidqly-green-emerald" /> Latest Articles
+              </h2>
+              <ul className="space-y-3">
+                <li>
+                   <Link to="/blog" className="text-sidqly-green-deep font-bold hover:text-sidqly-green-emerald transition-colors flex items-center gap-2 text-sm group">
+                      <ChevronRight size={14} className="group-hover:translate-x-1 transition-transform" /> All Blog Posts
+                   </Link>
+                </li>
+                {blogPosts.slice(0, 15).map(article => (
+                  <li key={article.slug}>
+                    <Link to={`/blog/${article.slug}`} className="text-gray-600 hover:text-sidqly-green-emerald transition-colors flex items-center gap-2 text-sm group">
+                      <ChevronRight size={14} className="group-hover:translate-x-1 transition-transform" /> {article.title}
+                    </Link>
+                  </li>
+                ))}
+                {blogPosts.length > 15 && (
+                  <li>
+                    <Link to="/blog" className="text-sidqly-green-emerald italic text-xs hover:underline">
+                      + {blogPosts.length - 15} more articles
+                    </Link>
+                  </li>
+                )}
+              </ul>
+            </div>
           </div>
 
-          <div className="bg-sidqly-navy text-white rounded-[40px] p-10 md:p-16 text-center">
-             <h2 className="text-3xl font-bold mb-8">Can't find what you're looking for?</h2>
-             <div className="flex flex-wrap justify-center gap-4">
-                <a href={brand.calendlyUrl} className="bg-sidqly-green-emerald text-white px-8 py-4 rounded-xl font-bold hover:shadow-lg transition-all">Book Support Call</a>
-                <a href={`mailto:${brand.email}`} className="bg-white/10 text-white border border-white/20 px-8 py-4 rounded-xl font-bold hover:bg-white/20 transition-all">Email {brand.email}</a>
+          <div className="mt-20 pt-10 border-t border-gray-200">
+             <h2 className="text-lg font-bold text-sidqly-navy mb-6">Machine Readable Content</h2>
+             <div className="flex flex-wrap gap-4">
+                {['llms.txt', 'ai-summary.md', 'product-overview.md', 'pricing-summary.md', 'faqs-summary.md', 'trust-and-safety.md', 'blog-index.md', 'schema-map.md'].map(file => (
+                   <a key={file} href={`/${file}`} className="px-4 py-2 bg-white border border-gray-200 rounded-lg text-xs font-mono text-gray-500 hover:text-sidqly-green-emerald transition-colors">
+                      /{file}
+                   </a>
+                ))}
              </div>
           </div>
         </div>

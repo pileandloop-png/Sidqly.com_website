@@ -31,6 +31,7 @@ import Legal from './pages/Legal';
 import ThankYou from './pages/ThankYou';
 import SitemapPage from './pages/SitemapPage';
 import AISearchReadiness from './pages/AISearchReadiness';
+import Resources from './pages/Resources';
 
 // Dynamic Templates
 import BlogIndex from './pages/blog/BlogIndex';
@@ -47,23 +48,6 @@ import RegionDetail from './pages/regions/RegionDetail';
 
 import { brand } from './config/brand';
 import { Link } from 'react-router-dom';
-
-// Simple placeholder for pages not yet fully implemented
-const Placeholder = ({ title }: { title: string }) => (
-  <section className="py-20 bg-sidqly-ivory min-h-screen">
-    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h1 className="text-4xl font-bold text-sidqly-navy mb-10">{title}</h1>
-      <div className="bg-white p-8 md:p-12 rounded-3xl border border-gray-100 shadow-sm">
-        <p className="text-gray-600 leading-relaxed mb-10">Details about {title} are being updated for v1.5. Sidqly is a premium operating platform for modern Islamic organizations.</p>
-        <div className="flex flex-wrap gap-4">
-          <Link to="/" className="bg-sidqly-green-deep text-white px-8 py-3 rounded-xl font-bold hover:shadow-lg transition-all">Go Home</Link>
-          <a href={brand.calendlyUrl} className="bg-white border border-gray-200 px-8 py-3 rounded-xl font-bold text-sidqly-navy hover:bg-gray-50 transition-all">Book Demo</a>
-          <a href={brand.inquiryFormUrl} className="text-sidqly-green-emerald font-bold px-4 py-3">Fill Inquiry Form</a>
-        </div>
-      </div>
-    </div>
-  </section>
-);
 
 const NotFound = () => (
   <section className="py-20 bg-sidqly-ivory min-h-screen flex items-center">
@@ -158,7 +142,7 @@ function App() {
             <Route path="alternatives/:slug" element={<CompareDetail />} />
 
             {/* Resources Routes */}
-            <Route path="resources" element={<Placeholder title="Resources" />} />
+            <Route path="resources" element={<Resources />} />
             <Route path="resources/:slug" element={<ResourceDetail />} />
 
             {/* 404 Route */}

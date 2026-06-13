@@ -11,7 +11,7 @@ const Privacy: React.FC = () => {
           <div className="bg-white p-8 md:p-16 rounded-[40px] shadow-sm border border-gray-100">
             <h1 className="text-4xl font-bold text-sidqly-navy mb-10">Privacy Policy</h1>
             <div className="prose prose-sidqly max-w-none text-gray-700 leading-relaxed space-y-8">
-              <p>Last updated: June 12, 2024</p>
+              <p>Last updated: June 12, 2026</p>
 
               <section>
                 <h2 className="text-2xl font-bold text-sidqly-navy mb-4">1. Our Commitment to Privacy</h2>

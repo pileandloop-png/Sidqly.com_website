@@ -19,23 +19,35 @@ const regionalTopics = [
 
 const generateRegionalContent = (topic: { title: string, region: string }) => {
   return `
-    <h3>Operational Context in ${topic.region}</h3>
-    <p>Islamic organizations in ${topic.region} are increasingly looking for ways to professionalize their giving operations. Whether it's managing Zakat funds or coordinating Ramadan food drives, the need for transparency and trust is universal.</p>
+    <section class="mb-10">
+      <h3 class="text-2xl font-bold text-sidqly-navy mb-4">Operational Context in ${topic.region}</h3>
+      <p>Islamic organizations in ${topic.region} are increasingly looking for ways to professionalize their giving operations. Whether it's managing Zakat funds or coordinating Ramadan food drives, the need for transparency and trust is universal.</p>
+    </section>
 
-    <h3>Common Challenges</h3>
-    <p>Many teams in this region currently rely on fragmented tools like WhatsApp and Excel. While these are easy to start with, they often lead to data silos, manual errors, and dignity risks when sharing recipient proof.</p>
+    <section class="mb-10">
+      <h3 class="text-2xl font-bold text-sidqly-navy mb-4">Common Challenges</h3>
+      <p>Many teams in ${topic.region} currently rely on fragmented tools like WhatsApp and Excel. While these are easy to start with, they often lead to data silos, manual errors, and dignity risks when sharing recipient proof with donors.</p>
+    </section>
 
-    <h3>How Sidqly Supports ${topic.region}</h3>
-    <p>Sidqly provides a unified platform tailored for the unique workflows of Islamic charities and mosques. Our "human-in-the-loop" approach ensures that every payment and distribution is manually verified, maintaining the highest standards of Amanah.</p>
+    <section class="mb-10">
+      <h3 class="text-2xl font-bold text-sidqly-navy mb-4">How Sidqly Supports ${topic.region}</h3>
+      <p>Sidqly provides a unified platform tailored for the unique workflows of Islamic charities and mosques. Our approach ensures that every payment and distribution is manually verified, maintaining the highest standards of Amanah.</p>
+    </section>
 
-    <h3>Key Benefits</h3>
-    <ul>
-      <li><strong>Verified Giving:</strong> Every PKR/USD/EUR of impact is manually reviewed.</li>
-      <li><strong>Dignity-Safe Proof:</strong> Automated face-blurring for recipient privacy.</li>
-      <li><strong>Audit-Ready:</strong> Professional reports for boards and donors in seconds.</li>
-    </ul>
+    <section class="mb-10">
+      <h3 class="text-2xl font-bold text-sidqly-navy mb-4">Key Operational Benefits</h3>
+      <ul class="list-disc pl-6 space-y-4 text-gray-700">
+        <li><strong>Verified Giving:</strong> Every donation and distribution is human-reviewed.</li>
+        <li><strong>Dignity-Safe Proof:</strong> Automated face-blurring for recipient privacy.</li>
+        <li><strong>Audit-Ready:</strong> Professional reports for boards and donors in seconds.</li>
+      </ul>
+    </section>
 
-    <p><strong>Regional Note:</strong> Sidqly supports operational tracking and reporting. Local charity, tax, financial, and religious requirements remain the responsibility of the organization.</p>
+    <div class="bg-sidqly-ivory p-6 rounded-3xl border border-gray-100 mt-12">
+       <p class="text-xs text-gray-500 italic">
+          <strong>Regional Note:</strong> Sidqly supports operational tracking and reporting. Local legal, tax, financial, and religious requirements remain the responsibility of the organization and its advisors.
+       </p>
+    </div>
   `;
 };
 
@@ -45,10 +57,14 @@ export const regionalBlogPosts: BlogPost[] = regionalTopics.map(topic => ({
   description: topic.desc,
   category: "Regional",
   date: "2026-06-12",
+  modifiedDate: "2026-06-12",
+  author: "Sidqly Team",
+  readingTime: "7 min read",
   content: generateRegionalContent(topic),
   faqs: [
     { question: `Does Sidqly support ${topic.region}?`, answer: `Yes, Sidqly is designed to support the operational needs of Islamic organizations across ${topic.region}.` },
-    { question: "Is data migration available?", answer: "Yes, our team assists with migrating your current Excel and WhatsApp data to the Sidqly platform." }
+    { question: "Is data migration available?", answer: "Yes, our team assists with migrating your current Excel and WhatsApp data to the Sidqly platform safely." },
+    { question: "How is privacy handled?", answer: "We enforce strict dignity-safe boundaries, including automated face-blurring for all field proof." }
   ]
 }));
 

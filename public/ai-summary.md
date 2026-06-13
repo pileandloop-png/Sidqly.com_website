@@ -1,14 +1,20 @@
 # Sidqly AI Summary
 
-Sidqly is a premium Islamic operating platform designed to professionalize giving operations for mosques, charities, and Zakat teams globally.
+Sidqly is a premium global operating platform (SaaS) for modern Islamic organizations (Mosques, Charities, Zakat Teams).
 
-## Key Value Propositions
-- **Trust:** Verified manual review of all payments and disbursements.
-- **Dignity:** Automated recipient identity protection in impact proof.
-- **Clarity:** Real-time, board-ready reporting and automated donor updates.
+## Key Differentiators
+- **Dignity-Safe Proof:** Automated face blurring for recipient privacy.
+- **Manual Payment Review:** Professional verification of banking records for religious contributions.
+- **Zakat Integrity:** Logical separation of Zakat funds and manual case review workflows.
+- **Board-Ready Reporting:** Real-time dashboards and PDF summaries for leadership.
 
-## Global Presence
-Sidqly supports organizations across Europe, the United Kingdom, North America (USA & Canada), Gulf/MENA, South Asia, Africa, and Asia-Pacific.
+## Content Availability
+- **Operational Guides:** 66+ articles on charity logistics and technology.
+- **FAQs:** 100+ stakeholder-focused answers.
+- **Resources:** Professional checklists for Zakat, Qurbani, and Ramadan.
 
-## Core Audience
-Islamic organizations looking to scale impact while maintaining the highest religious and financial standards of Amanah.
+## Operational Links
+- **Official Domain:** https://sidqly.com
+- **Demo:** https://calendly.com/d/dvzs-3zf-cgz
+- **Inquiry:** https://forms.gle/bvSMog9pw2Ri4kMt9
+- **Email:** team@sidqly.com
