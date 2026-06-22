@@ -3,10 +3,8 @@ import { useParams, Link } from 'react-router-dom';
 import SEO from '../../components/SEO';
 import { modules } from '../../data/solutions_modules';
 import { brand } from '../../config/brand';
-import { Box, CheckCircle2, ShieldCheck, ChevronDown, ChevronRight, FileText, Share2, Link as LinkIcon, ArrowRight } from 'lucide-react';
-import ModuleWorkflowDiagram from '../../components/ModuleWorkflowDiagram';
-import { PrivacyBoundaryGraphic, ReviewGateGraphic } from '../../components/Graphics';
-import ReadingProgressSidebar from '../../components/ReadingProgressSidebar';
+import { Box } from 'lucide-react';
+import { generateServiceSchema, generateBreadcrumbSchema, generateHowToSchema } from '../../lib/schema';
 
 const ModuleDetail: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -23,70 +21,26 @@ const ModuleDetail: React.FC = () => {
     );
   }
 
-  const sidebarSections = [
-    { id: 'overview', label: 'Overview & Problem' },
-    { id: 'value-proposition', label: 'Value & Privacy' },
-    { id: 'workflow', label: 'Sidqly Workflow' },
-    { id: 'outputs', label: 'Outputs & Reports' },
-    { id: 'faqs', label: 'FAQs' },
-    { id: 'next-steps', label: 'Next Steps' }
-  ];
-
-  const breadcrumbSchema = {
+  const schema = {
     "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://sidqly.com" },
-      { "@type": "ListItem", "position": 2, "name": "Modules", "item": "https://sidqly.com/modules" },
-      { "@type": "ListItem", "position": 3, "name": moduleData.name, "item": `https://sidqly.com/modules/${moduleData.slug}` }
+    "@graph": [
+      generateServiceSchema(module.title, module.desc, `/modules/${module.slug}`),
+      ...(module.workflow ? [generateHowToSchema(`How ${module.title} Works`, module.problem || module.desc, module.workflow)] : []),
+      generateBreadcrumbSchema([
+        { name: "Home", item: "/" },
+        { name: "Modules", item: "/modules" },
+        { name: module.title, item: `/modules/${module.slug}` }
+      ])
     ]
   };
-
-  const serviceSchema = {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "name": moduleData.name,
-    "description": moduleData.summary,
-    "provider": {
-      "@type": "Organization",
-      "name": "Sidqly",
-      "url": "https://sidqly.com"
-    },
-    "serviceType": "Charity Operations Software",
-    "areaServed": "Global"
-  };
-
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": moduleData.faqs.map(faq => ({
-      "@type": "Question",
-      "name": faq.question,
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": faq.answer
-      }
-    }))
-  };
-
-  const howToSchema = moduleData.workflowSteps.length > 0 ? {
-    "@context": "https://schema.org",
-    "@type": "HowTo",
-    "name": `How to use the ${moduleData.name} workflow`,
-    "description": `Step by step workflow for ${moduleData.name}`,
-    "step": moduleData.workflowSteps.map((step, index) => ({
-      "@type": "HowToStep",
-      "name": `Step ${index + 1}`,
-      "text": step
-    }))
-  } : null;
 
   return (
     <>
       <SEO
-        title={moduleData.seo.title}
-        description={moduleData.seo.description}
-        canonical={`/modules/${moduleData.slug}`}
+        title={`${module.title} Module | Sidqly`}
+        description={module.desc}
+        canonical={`/modules/${module.slug}`}
+        schema={schema}
       />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
