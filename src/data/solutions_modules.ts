@@ -200,14 +200,14 @@ export const modules = [
 ];
 
 export const solutions = [
-  { slug: "mosques", title: "Mosques", desc: "Managing Friday collections and community funds." },
-  { slug: "islamic-charities", title: "Islamic Charities", desc: "Audit-ready operations for registered organizations." },
-  { slug: "qurbani-providers", title: "Qurbani Providers", desc: "End-to-end management for global animal shares." },
-  { slug: "ramadan-food-drives", title: "Ramadan Food Drives", desc: "Logistics for large-scale meal and ration distribution." },
-  { slug: "zakat-teams", title: "Zakat Teams", desc: "Specialized workflows for eligible Zakat distribution." },
-  { slug: "corporate-csr-zakat", title: "Corporate CSR / Zakat", desc: "Transparency for corporate community investments." },
-  { slug: "vendors", title: "Vendors & Partners", desc: "Portals for fulfillment and field delivery partners." },
-  { slug: "volunteers", title: "Volunteers", desc: "Tools for distributed team task management." },
-  { slug: "community-welfare-teams", title: "Community Welfare", desc: "Organized local support and case management." },
-  { slug: "donors", title: "Donors", desc: "A trustworthy experience for giving with proof." }
+  { slug: "mosques", title: "Mosques", desc: "Managing Friday collections and community funds.", who: ["Mosque admins", "Imams"], problem: ["Unorganized donation tracking"], benefit: ["Centralized fund management"], workflow: ["Collection", "Review", "Reporting"], output: ["Financial summaries"], relevantModules: [] },
+  { slug: "islamic-charities", title: "Islamic Charities", desc: "Audit-ready operations for registered organizations.", who: ["Charity managers"], problem: ["Lack of clear audit trails"], benefit: ["Audit-ready records"], workflow: ["Submission", "Approval", "Reporting"], output: ["Board-ready reports"], relevantModules: [] },
+  { slug: "qurbani-providers", title: "Qurbani Providers", desc: "End-to-end management for global animal shares.", who: ["Qurbani teams"], problem: ["Chaos matching donors to shares"], benefit: ["End-to-end tracking"], workflow: ["Order Received", "Slaughtered", "Distributed"], output: ["Donor certificates"], relevantModules: [] },
+  { slug: "ramadan-food-drives", title: "Ramadan Food Drives", desc: "Logistics for large-scale meal and ration distribution.", who: ["Logistics teams"], problem: ["High volume tracking"], benefit: ["Scalable batch processing"], workflow: ["Route assignment", "Delivery proof", "Daily report"], output: ["Distribution logs"], relevantModules: [] },
+  { slug: "zakat-teams", title: "Zakat Teams", desc: "Specialized workflows for eligible Zakat distribution.", who: ["Zakat committees"], problem: ["Co-mingling Zakat with Sadaqah"], benefit: ["Logical fund separation"], workflow: ["Case intake", "Verification", "Disbursement"], output: ["Eligibility reports"], relevantModules: [] },
+  { slug: "corporate-csr-zakat", title: "Corporate CSR / Zakat", desc: "Transparency for corporate community investments.", who: ["Corporate liaisons"], problem: ["Sponsors demanding detailed impact"], benefit: ["Corporate-safe reporting"], workflow: ["Sponsored campaign", "Impact proof", "Report generation"], output: ["Professional PDF summaries"], relevantModules: [] },
+  { slug: "vendors", title: "Vendors & Partners", desc: "Portals for fulfillment and field delivery partners.", who: ["Vendors"], problem: ["Chasing proof via WhatsApp"], benefit: ["Centralized vendor portals"], workflow: ["Task assignment", "Acceptance", "Proof upload"], output: ["Vendor proof collection"], relevantModules: [] },
+  { slug: "volunteers", title: "Volunteers", desc: "Tools for distributed team task management.", who: ["Volunteer managers"], problem: ["Unclear field assignments"], benefit: ["Clear task lists"], workflow: ["Task assignment", "Instructions", "Completion status"], output: ["Activity logs"], relevantModules: [] },
+  { slug: "community-welfare-teams", title: "Community Welfare", desc: "Organized local support and case management.", who: ["Welfare officers"], problem: ["Handling sensitive documents insecurely"], benefit: ["Protected case review"], workflow: ["Protected review", "Approval", "Anonymization"], output: ["Private requester queues"], relevantModules: [] },
+  { slug: "donors", title: "Donors", desc: "A trustworthy experience for giving with proof.", who: ["Donors"], problem: ["Demanding proof manually"], benefit: ["Dignified automatic updates"], workflow: ["Payment", "Processing", "Impact proof received"], output: ["Donor-safe updates"], relevantModules: [] }
 ];

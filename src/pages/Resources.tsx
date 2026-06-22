@@ -96,15 +96,17 @@ const Resources: React.FC = () => {
            <div className="grid md:grid-cols-2 gap-16">
               <div>
                  <h2 className="text-2xl font-bold text-sidqly-navy mb-8 border-b border-gray-100 pb-4 flex items-center gap-3">
-                    <FileText className="text-sidqly-green-emerald" /> Buyer Resources
+                    <FileText className="text-sidqly-green-emerald" /> Featured Guides & Resources
                  </h2>
                  <ul className="space-y-4">
-                    <li><Link to="/pricing" className="text-gray-600 hover:text-sidqly-green-deep font-medium flex items-center gap-2 transition-colors"><ArrowRight size={14} className="text-sidqly-green-emerald" /> Pricing overview</Link></li>
-                    <li><Link to="/pricing" className="text-gray-600 hover:text-sidqly-green-deep font-medium flex items-center gap-2 transition-colors"><ArrowRight size={14} className="text-sidqly-green-emerald" /> Plan comparison</Link></li>
-                    <li><Link to="/implementation" className="text-gray-600 hover:text-sidqly-green-deep font-medium flex items-center gap-2 transition-colors"><ArrowRight size={14} className="text-sidqly-green-emerald" /> Implementation steps</Link></li>
-                    <li><a href={brand.calendlyUrl} target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-sidqly-green-deep font-medium flex items-center gap-2 transition-colors"><ArrowRight size={14} className="text-sidqly-green-emerald" /> Demo booking</a></li>
-                    <li><a href={brand.inquiryFormUrl} target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-sidqly-green-deep font-medium flex items-center gap-2 transition-colors"><ArrowRight size={14} className="text-sidqly-green-emerald" /> Inquiry form</a></li>
-                    <li><Link to="/purchase" className="text-gray-600 hover:text-sidqly-green-deep font-medium flex items-center gap-2 transition-colors"><ArrowRight size={14} className="text-sidqly-green-emerald" /> What happens after plan confirmation</Link></li>
+                    <li><Link to="/resources/featured-guides" className="text-gray-600 hover:text-sidqly-green-deep font-medium flex items-center gap-2 transition-colors"><ArrowRight size={14} className="text-sidqly-green-emerald" /> Featured Guides</Link></li>
+                    <li><Link to="/resources/module-guides" className="text-gray-600 hover:text-sidqly-green-deep font-medium flex items-center gap-2 transition-colors"><ArrowRight size={14} className="text-sidqly-green-emerald" /> Module Guides</Link></li>
+                    <li><Link to="/resources/workflow-playbooks" className="text-gray-600 hover:text-sidqly-green-deep font-medium flex items-center gap-2 transition-colors"><ArrowRight size={14} className="text-sidqly-green-emerald" /> Workflow Playbooks</Link></li>
+                    <li><Link to="/resources/stakeholder-resources" className="text-gray-600 hover:text-sidqly-green-deep font-medium flex items-center gap-2 transition-colors"><ArrowRight size={14} className="text-sidqly-green-emerald" /> Stakeholder Resources</Link></li>
+                    <li><Link to="/resources/comparison-guides" className="text-gray-600 hover:text-sidqly-green-deep font-medium flex items-center gap-2 transition-colors"><ArrowRight size={14} className="text-sidqly-green-emerald" /> Comparison Guides</Link></li>
+                    <li><Link to="/resources/trust-and-safety" className="text-gray-600 hover:text-sidqly-green-deep font-medium flex items-center gap-2 transition-colors"><ArrowRight size={14} className="text-sidqly-green-emerald" /> Trust and Safety Resources</Link></li>
+                    <li><Link to="/resources/glossary" className="text-gray-600 hover:text-sidqly-green-deep font-medium flex items-center gap-2 transition-colors"><ArrowRight size={14} className="text-sidqly-green-emerald" /> Glossary</Link></li>
+                    <li><Link to="/request-organization" className="text-gray-600 hover:text-sidqly-green-deep font-medium flex items-center gap-2 transition-colors"><ArrowRight size={14} className="text-sidqly-green-emerald" /> Request Your Organization</Link></li>
                  </ul>
               </div>
               <div>

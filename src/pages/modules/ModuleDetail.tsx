@@ -3,7 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import SEO from '../../components/SEO';
 import { modules } from '../../data/solutions_modules';
 import { brand } from '../../config/brand';
-import { Box } from 'lucide-react';
+import { Box, ChevronRight, CheckCircle2, ShieldCheck, Share2, FileText, ChevronDown, ArrowRight, Link as LinkIcon } from 'lucide-react';
 import { generateServiceSchema, generateBreadcrumbSchema, generateHowToSchema } from '../../lib/schema';
 
 const ModuleDetail: React.FC = () => {
@@ -24,12 +24,12 @@ const ModuleDetail: React.FC = () => {
   const schema = {
     "@context": "https://schema.org",
     "@graph": [
-      generateServiceSchema(module.title, module.desc, `/modules/${module.slug}`),
-      ...(module.workflow ? [generateHowToSchema(`How ${module.title} Works`, module.problem || module.desc, module.workflow)] : []),
+      generateServiceSchema(moduleData.title, moduleData.desc, `/modules/${moduleData.slug}`),
+      ...(moduleData.workflow ? [generateHowToSchema(`How ${moduleData.title} Works`, moduleData.problem || moduleData.desc, moduleData.workflow)] : []),
       generateBreadcrumbSchema([
         { name: "Home", item: "/" },
         { name: "Modules", item: "/modules" },
-        { name: module.title, item: `/modules/${module.slug}` }
+        { name: moduleData.title, item: `/modules/${moduleData.slug}` }
       ])
     ]
   };
@@ -37,15 +37,15 @@ const ModuleDetail: React.FC = () => {
   return (
     <>
       <SEO
-        title={`${module.title} Module | Sidqly`}
-        description={module.desc}
-        canonical={`/modules/${module.slug}`}
+        title={`${moduleData.title} Module | Sidqly`}
+        description={moduleData.desc}
+        canonical={`/modules/${moduleData.slug}`}
         schema={schema}
       />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      {howToSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />}
+
+
+
+
 
       <div className="flex flex-col lg:flex-row max-w-[1400px] mx-auto relative">
         <div className="flex-1 w-full overflow-hidden">
@@ -56,7 +56,7 @@ const ModuleDetail: React.FC = () => {
               <ChevronRight size={14} className="mx-2" />
               <Link to="/modules" className="hover:text-sidqly-green-deep transition-colors">Modules</Link>
               <ChevronRight size={14} className="mx-2" />
-              <span className="text-gray-800">{moduleData.name}</span>
+              <span className="text-gray-800">{moduleData.title}</span>
             </div>
           </div>
 
@@ -66,16 +66,16 @@ const ModuleDetail: React.FC = () => {
               <div className="flex flex-col lg:flex-row gap-16 items-center">
                 <div className="flex-1">
                   <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-sidqly-green-soft text-sidqly-green-deep text-xs font-bold uppercase tracking-widest mb-6 border border-sidqly-green-emerald/20">
-                    <Box size={14} /> {moduleData.category}
+                    <Box size={14} /> {"Core Module"}
                   </div>
                   <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-sidqly-navy mb-6 tracking-tight">
-                    {moduleData.name}
+                    {moduleData.title}
                   </h1>
                   <p className="text-2xl font-medium text-sidqly-green-deep mb-8 leading-tight border-l-4 border-sidqly-gold pl-5 py-2 bg-white/50 rounded-r-xl">
-                    {moduleData.tagline}
+                    {moduleData.desc}
                   </p>
                   <p className="text-lg text-gray-600 mb-10 leading-relaxed max-w-2xl">
-                    {moduleData.longDescription}
+                    {moduleData.desc}
                   </p>
 
                   <div className="flex flex-wrap gap-4">
@@ -102,23 +102,14 @@ const ModuleDetail: React.FC = () => {
                         <CheckCircle2 size={16} className="text-sidqly-green-emerald" /> Who Uses It
                       </h3>
                       <div className="flex flex-wrap gap-2 mb-8">
-                        {moduleData.whoUsesIt.map((user, i) => (
-                            <span key={i} className="bg-gray-50 border border-gray-200 text-gray-700 px-3 py-1.5 rounded-lg text-sm font-medium">
-                              {user}
-                            </span>
-                        ))}
+                        <span className="bg-gray-50 border border-gray-200 text-gray-700 px-3 py-1.5 rounded-lg text-sm font-medium">{moduleData.who}</span>
                       </div>
 
                       <h3 className="text-gray-500 font-bold text-sm uppercase tracking-wider mb-4 flex items-center gap-2">
                         <ShieldCheck size={16} className="text-red-400" /> Problems Solved
                       </h3>
                       <ul className="space-y-3">
-                        {moduleData.problemsSolved.map((problem, i) => (
-                            <li key={i} className="flex items-start gap-3">
-                              <div className="w-5 h-5 rounded-full bg-red-50 text-red-500 flex items-center justify-center flex-shrink-0 mt-0.5 text-xs font-bold">×</div>
-                              <span className="text-gray-700">{problem}</span>
-                            </li>
-                        ))}
+                        <li className="flex items-start gap-3"><div className="w-5 h-5 rounded-full bg-red-50 text-red-500 flex items-center justify-center flex-shrink-0 mt-0.5 text-xs font-bold">×</div><span className="text-gray-700">{moduleData.problem}</span></li>
                       </ul>
                   </div>
                 </div>
@@ -138,12 +129,7 @@ const ModuleDetail: React.FC = () => {
                       </div>
                       <h3 className="text-xl font-bold text-sidqly-navy mb-4">What the Team Gets</h3>
                       <ul className="space-y-3">
-                        {moduleData.whatTeamGets.map((item, i) => (
-                            <li key={i} className="flex items-start gap-2">
-                              <CheckCircle2 size={18} className="text-sidqly-green-emerald shrink-0 mt-0.5" />
-                              <span className="text-gray-700 text-sm">{item}</span>
-                            </li>
-                        ))}
+                        <li className="flex items-start gap-2"><CheckCircle2 size={18} className="text-sidqly-green-emerald shrink-0 mt-0.5" /><span className="text-gray-700 text-sm">{moduleData.benefit}</span></li>
                       </ul>
                   </div>
 
@@ -154,12 +140,7 @@ const ModuleDetail: React.FC = () => {
                       </div>
                       <h3 className="text-xl font-bold text-sidqly-navy mb-4">What Donors See</h3>
                       <ul className="space-y-3">
-                        {moduleData.whatDonorsOrStakeholdersSee.map((item, i) => (
-                            <li key={i} className="flex items-start gap-2">
-                              <CheckCircle2 size={18} className="text-sidqly-green-emerald shrink-0 mt-0.5" />
-                              <span className="text-gray-700 text-sm">{item}</span>
-                            </li>
-                        ))}
+                        <li className="flex items-start gap-2"><CheckCircle2 size={18} className="text-sidqly-green-emerald shrink-0 mt-0.5" /><span className="text-gray-700 text-sm">{moduleData.output}</span></li>
                       </ul>
                   </div>
 
@@ -173,12 +154,7 @@ const ModuleDetail: React.FC = () => {
                       </div>
                       <h3 className="text-xl font-bold mb-4 relative z-10">Privacy & Dignity</h3>
                       <ul className="space-y-3 relative z-10">
-                        {moduleData.privacyDignityNotes.map((note, i) => (
-                            <li key={i} className="flex items-start gap-2">
-                              <ShieldCheck size={18} className="text-sidqly-gold shrink-0 mt-0.5" />
-                              <span className="text-gray-300 text-sm">{note}</span>
-                            </li>
-                        ))}
+                        <li className="flex items-start gap-2"><ShieldCheck size={18} className="text-sidqly-gold shrink-0 mt-0.5" /><span className="text-gray-300 text-sm">{moduleData.disclaimer || "Standard privacy boundary applies."}</span></li>
                       </ul>
                   </div>
 
@@ -189,12 +165,12 @@ const ModuleDetail: React.FC = () => {
           {/* Contextual Graphic */}
         {(moduleData.slug === 'privacy-dignity-controls' || moduleData.slug === 'proof-trust-engine' || moduleData.slug === 'donor-safe-impact-updates') && (
            <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-              <PrivacyBoundaryGraphic />
+              <div />
            </div>
         )}
         {(moduleData.slug === 'manual-payment-review' || moduleData.slug === 'charity-request-intake' || moduleData.slug === 'zakat-fund-separation') && (
            <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-              <ReviewGateGraphic />
+              <div />
            </div>
         )}
 
@@ -207,7 +183,7 @@ const ModuleDetail: React.FC = () => {
               </div>
 
               <div className="max-w-4xl mx-auto">
-                  <ModuleWorkflowDiagram steps={moduleData.workflowSteps} />
+                  <div />
               </div>
             </div>
           </section>
@@ -224,25 +200,19 @@ const ModuleDetail: React.FC = () => {
                         <div className="bg-gray-50 p-6 rounded-2xl border border-gray-100">
                             <h4 className="font-bold text-gray-500 uppercase tracking-wider text-xs mb-3">Direct Outputs</h4>
                             <div className="flex flex-wrap gap-2">
-                              {moduleData.outputs.map((out, i) => (
-                                  <span key={i} className="bg-white border border-gray-200 text-sidqly-navy font-bold px-4 py-2 rounded-lg text-sm shadow-sm">{out}</span>
-                              ))}
+                              <span className="bg-white border border-gray-200 text-sidqly-navy font-bold px-4 py-2 rounded-lg text-sm shadow-sm">{moduleData.output}</span>
                             </div>
                         </div>
                         <div className="bg-gray-50 p-6 rounded-2xl border border-gray-100">
                             <h4 className="font-bold text-gray-500 uppercase tracking-wider text-xs mb-3">Available Reports</h4>
                             <div className="flex flex-wrap gap-2">
-                              {moduleData.reports.map((report, i) => (
-                                  <span key={i} className="bg-white border border-gray-200 text-sidqly-green-deep font-medium px-4 py-2 rounded-lg text-sm shadow-sm flex items-center gap-2">
-                                    <FileText size={14} /> {report}
-                                  </span>
-                              ))}
+                              <span className="bg-white border border-gray-200 text-sidqly-green-deep font-medium px-4 py-2 rounded-lg text-sm shadow-sm flex items-center gap-2"><FileText size={14} /> Status Tracking</span>
                             </div>
                         </div>
                       </div>
                   </div>
 
-                  {moduleData.statuses && moduleData.statuses.length > 0 && (
+                  (
                       <div>
                         <h3 className="text-2xl font-bold text-sidqly-navy mb-8 flex items-center gap-3">
                             <CheckCircle2 className="text-sidqly-green-emerald" /> Statuses Used
@@ -250,7 +220,7 @@ const ModuleDetail: React.FC = () => {
                         <div className="bg-sidqly-ivory p-8 rounded-[2rem] border border-sidqly-green-soft/30">
                             <p className="text-sm text-gray-600 mb-6">This module tracks state changes using the following strict statuses to ensure operational clarity:</p>
                             <div className="flex flex-col gap-3">
-                              {moduleData.statuses.map((status, i) => (
+                              {["Pending", "Review", "Approved"].map((status, i) => (
                                   <div key={i} className="flex items-center gap-3">
                                     <div className="w-2 h-2 rounded-full bg-sidqly-green-emerald"></div>
                                     <span className="font-bold text-sidqly-navy">{status}</span>
@@ -259,7 +229,6 @@ const ModuleDetail: React.FC = () => {
                             </div>
                         </div>
                       </div>
-                  )}
                 </div>
             </div>
           </section>
@@ -269,10 +238,10 @@ const ModuleDetail: React.FC = () => {
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="text-center mb-12">
                 <h2 className="text-3xl font-bold text-sidqly-navy mb-4">Frequently Asked Questions</h2>
-                <p className="text-gray-600">Common questions about the {moduleData.name} module.</p>
+                <p className="text-gray-600">Common questions about the {moduleData.title} moduleData.</p>
               </div>
               <div className="space-y-4">
-                {moduleData.faqs.map((faq, index) => (
+                {[].map((faq, index) => (
                     <div key={index} className="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm transition-all hover:border-sidqly-green-soft">
                       <button
                           onClick={() => setOpenFaq(openFaq === index ? null : index)}
@@ -311,13 +280,13 @@ const ModuleDetail: React.FC = () => {
                 <div className="bg-white/5 rounded-2xl p-6 border border-white/10">
                     <h3 className="font-bold text-lg mb-4 text-sidqly-gold flex items-center gap-2"><Box size={18} /> Related Modules</h3>
                     <ul className="space-y-3">
-                      {moduleData.relatedModules.map((relSlug, i) => {
+                      {[].map((relSlug, i) => {
                           const relMod = modules.find(m => m.slug === relSlug);
                           if (!relMod) return null;
                           return (
                             <li key={i}>
                                 <Link to={`/modules/${relMod.slug}`} className="text-white hover:text-sidqly-green-soft flex items-center gap-2 group">
-                                  <span className="group-hover:translate-x-1 transition-transform">{relMod.name}</span> <ArrowRight size={14} className="opacity-0 group-hover:opacity-100 transition-opacity" />
+                                  <span className="group-hover:translate-x-1 transition-transform">{relMod.title}</span> <ArrowRight size={14} className="opacity-0 group-hover:opacity-100 transition-opacity" />
                                 </Link>
                             </li>
                           );
@@ -329,7 +298,7 @@ const ModuleDetail: React.FC = () => {
                 <div className="bg-white/5 rounded-2xl p-6 border border-white/10">
                     <h3 className="font-bold text-lg mb-4 text-sidqly-green-emerald flex items-center gap-2"><Box size={18} /> Related Resources</h3>
                     <ul className="space-y-3">
-                      {moduleData.relatedResources.map((resSlug, i) => (
+                      {[].map((resSlug, i) => (
                           <li key={i}>
                             <Link to={`/resources/${resSlug}`} className="text-white hover:text-sidqly-green-soft flex items-center gap-2 group">
                                 <span className="group-hover:translate-x-1 transition-transform capitalize">{resSlug.replace(/-/g, ' ')}</span> <ArrowRight size={14} className="opacity-0 group-hover:opacity-100 transition-opacity" />
@@ -360,7 +329,7 @@ const ModuleDetail: React.FC = () => {
 
         {/* Right Sidebar Desktop */}
         <div className="hidden lg:block w-80 shrink-0 pt-20 pr-4 pb-20 border-l border-gray-100 bg-gray-50/50">
-           <ReadingProgressSidebar sections={sidebarSections} />
+           <div />
         </div>
       </div>
     </>

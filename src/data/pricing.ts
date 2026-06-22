@@ -106,5 +106,5 @@ export const pricing = {
     "Extra stakeholder reporting setup",
     "Priority implementation"
   ],
-  disclaimer: "Early access launch pricing for organizations joining during Sidqly's public rollout. Final pricing may vary based on modules, team size, rollout needs, and support level."
+  disclaimer: "Launch pricing is available during Sidqly’s public rollout. Final pricing may vary based on modules, team size, rollout needs, and support level. Payment and onboarding instructions are shared after plan confirmation."
 };

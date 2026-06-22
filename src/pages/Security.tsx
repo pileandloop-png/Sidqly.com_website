@@ -30,7 +30,7 @@ const Security: React.FC = () => {
               {
                 icon: <Shield className="text-sidqly-green-emerald" size={32} />,
                 title: "Secure Access Principles",
-                desc: "Granular roles and permissions ensure your team only sees the data necessary for their specific tasks."
+                desc: "Role-safe visibility ensures your team only sees the data necessary for their specific tasks."
               },
               {
                 icon: <Eye className="text-sidqly-green-emerald" size={32} />,

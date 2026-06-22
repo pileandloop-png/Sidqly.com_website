@@ -73,7 +73,18 @@ const Pricing: React.FC = () => {
           </div>
 
           {/* Pricing Cards */}
-          <div className="grid lg:grid-cols-4 gap-6 mb-16">
+          <div className="mb-16">
+  <h2 className="text-3xl font-bold mb-8 text-sidqly-navy text-center">What plan is best for whom?</h2>
+  <div className="grid md:grid-cols-2 gap-4 mb-12">
+    {activePlans.map(p => (
+      <div key={p.name} className="p-6 bg-white border border-gray-100 rounded-2xl shadow-sm text-left">
+        <h4 className="font-bold text-sidqly-navy mb-2">{p.name}</h4>
+        <p className="text-sm text-gray-600">{p.idealFor.join(', ')}</p>
+      </div>
+    ))}
+  </div>
+</div>
+<div className="grid lg:grid-cols-4 gap-6 mb-16">
             {activePlans.map((plan) => {
               const priceData = isAnnual ? plan.annual : plan.monthly;
               const isCustom = priceData.launch === "Custom";
@@ -255,6 +266,14 @@ const Pricing: React.FC = () => {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Post Purchase Process */}
+      <section className="py-20 bg-white border-t border-gray-100">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl font-bold mb-6 text-sidqly-navy">What happens after choosing a plan?</h2>
+          <p className="text-gray-600">You will meet with our team to map out your modules and workflows. Payment and onboarding instructions are shared after plan confirmation.</p>
         </div>
       </section>
 
