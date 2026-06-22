@@ -46,15 +46,18 @@ const Home: React.FC = () => {
             <p className="text-xl md:text-2xl text-gray-300 mb-12 leading-relaxed font-medium">
               Sidqly helps mosques, charities, and giving teams manage workflows, manual review, proof approval, and board-ready reporting from one premium global platform.
             </p>
-            <div className="flex flex-col sm:flex-row justify-center gap-6">
-              <a href={brand.calendlyUrl} target="_blank" rel="noopener noreferrer" className="bg-sidqly-green-emerald text-white px-10 py-5 rounded-2xl text-xl font-bold hover:bg-sidqly-green-deep transition-all shadow-xl hover:shadow-sidqly-green-emerald/20 text-center">
+            <div className="flex flex-col sm:flex-row justify-center gap-6 flex-wrap">
+              <a href={brand.links?.calendly || 'https://calendly.com/d/dvzs-3zf-cgz'} target="_blank" rel="noopener noreferrer" className="bg-sidqly-green-emerald text-white px-10 py-5 rounded-2xl text-xl font-bold hover:bg-sidqly-green-deep transition-all shadow-xl hover:shadow-sidqly-green-emerald/20 text-center">
                 Book Demo
               </a>
-              <a href={brand.inquiryFormUrl} target="_blank" rel="noopener noreferrer" className="bg-white/10 text-white border border-white/20 px-10 py-5 rounded-2xl text-xl font-bold hover:bg-white/20 transition-all backdrop-blur-sm text-center">
+              <a href={brand.links?.inquiryForm || 'https://forms.gle/bvSMog9pw2Ri4kMt9'} target="_blank" rel="noopener noreferrer" className="bg-white/10 text-white border border-white/20 px-10 py-5 rounded-2xl text-xl font-bold hover:bg-white/20 transition-all backdrop-blur-sm text-center">
                 Fill Inquiry Form
               </a>
-              <Link to="/pricing" className="bg-transparent text-sidqly-green-soft border border-sidqly-green-soft/30 px-10 py-5 rounded-2xl text-xl font-bold hover:bg-sidqly-green-soft/10 transition-all text-center">
-                View Pricing
+              <Link to="/modules" className="bg-transparent text-sidqly-green-soft border border-sidqly-green-soft/30 px-10 py-5 rounded-2xl text-xl font-bold hover:bg-sidqly-green-soft/10 transition-all text-center">
+                View Modules
+              </Link>
+              <Link to="/request-organization" className="bg-transparent text-sidqly-gold border border-sidqly-gold/30 px-10 py-5 rounded-2xl text-xl font-bold hover:bg-sidqly-gold/10 transition-all text-center">
+                Request Your Organization
               </Link>
             </div>
           </div>
@@ -165,8 +168,8 @@ const Home: React.FC = () => {
            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4">
               {modules.map((mod) => (
                 <Link key={mod.slug} to={`/modules/${mod.slug}`} className="p-6 bg-sidqly-ivory rounded-2xl border border-gray-50 hover:border-sidqly-green-soft hover:shadow-lg transition-all group hover:-translate-y-1">
-                   <h4 className="font-bold text-sidqly-navy text-sm mb-2 group-hover:text-sidqly-green-emerald transition-colors">{mod.name}</h4>
-                   <p className="text-[10px] text-gray-500 leading-relaxed">{mod.summary}</p>
+                   <h4 className="font-bold text-sidqly-navy text-sm mb-2 group-hover:text-sidqly-green-emerald transition-colors">{mod.title}</h4>
+                   <p className="text-[10px] text-gray-500 leading-relaxed">{mod.desc}</p>
                 </Link>
               ))}
            </div>

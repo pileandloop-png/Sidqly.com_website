@@ -20,51 +20,18 @@ const Navbar: React.FC = () => {
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, []);
 
-  const navigation = [
-    { name: 'Features', href: '/features' },
-    {
-      name: 'Solutions',
-      href: '/solutions',
-      children: [
-        { name: 'Mosques', href: '/solutions/mosques' },
-        { name: 'Islamic Charities', href: '/solutions/islamic-charities' },
-        { name: 'Qurbani Providers', href: '/solutions/qurbani-providers' },
-        { name: 'Ramadan Teams', href: '/solutions/ramadan-food-drives' },
-        { name: 'Zakat Teams', href: '/solutions/zakat-teams' },
-        { name: 'Corporate CSR', href: '/solutions/corporate-csr-zakat' },
-        { name: 'View All Solutions', href: '/solutions' },
-      ]
-    },
-    {
-      name: 'Modules',
-      href: '/modules',
-      children: [
-        { name: 'Manual Review', href: '/modules/manual-payment-review' },
-        { name: 'Proof Trust', href: '/modules/proof-trust-engine' },
-        { name: 'Zakat Separation', href: '/modules/zakat-fund-separation' },
-        { name: 'Qurbani Lifecycle', href: '/modules/qurbani-lifecycle' },
-        { name: 'Ramadan Meals', href: '/modules/ramadan-meals-rations' },
-        { name: 'View All Modules', href: '/modules' },
-      ]
-    },
+      const navigation = [
+
+    { name: "Features", href: "/features" },
+    { name: 'Modules', href: '/modules' },
+    { name: 'Solutions', href: '/solutions' },
     { name: 'Pricing', href: '/pricing' },
-    {
-      name: 'Resources',
-      href: '/resources',
-      children: [
-        { name: 'Blog', href: '/blog' },
-        { name: 'Guides', href: '/resources' },
-        { name: 'Use Cases', href: '/resources' },
-        { name: 'FAQs', href: '/faqs' },
-        { name: 'Glossary', href: '/resources' },
-        { name: 'Comparison', href: '/compare' },
-        { name: 'Implementation', href: '/implementation' },
-        { name: 'Trust Center', href: '/trust-center' },
-        { name: 'Request Organization', href: '/request-organization' },
-      ]
-    },
+    { name: 'Resources', href: '/resources' },
+    { name: 'Blog', href: '/blog' },
     { name: 'Trust', href: '/trust-center' },
-  ];
+    { name: 'Demo', href: brand.links?.calendly || 'https://calendly.com/d/dvzs-3zf-cgz', external: true }
+  ] as Array<{ name: string; href: string; external?: boolean; children?: Array<{ name: string; href: string; }> }>;
+
 
   return (
     <>

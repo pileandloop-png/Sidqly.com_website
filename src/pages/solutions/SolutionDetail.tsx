@@ -15,6 +15,22 @@ import ZakatLifecycle from '../../components/diagrams/ZakatLifecycle';
 import { generateServiceSchema, generateBreadcrumbSchema, generateFAQSchema, generateHowToSchema } from '../../lib/schema';
 import { faqs } from '../../data/faqs';
 
+
+interface NormalizedSolution {
+  slug: string;
+  title: string;
+  desc: string;
+  who?: string[];
+  problem?: string[];
+  benefit?: string[];
+  workflow?: string[];
+  output?: string[];
+  relevantModules?: string[];
+  privacyNotes?: string[];
+  faqs?: { question: string; answer: string }[];
+  seo?: Record<string, string | string[]>;
+}
+
 const SolutionDetail: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
   const solution = solutions.find(s => s.slug === slug);
@@ -89,7 +105,7 @@ const SolutionDetail: React.FC = () => {
             <div>
               <h2 className="text-3xl font-bold text-sidqly-navy mb-8">Professional operations for your {solution.title.toLowerCase()} team.</h2>
               <div className="space-y-6">
-                {['Campaign Tracking', 'Fund Separation', 'Dignity-Safe Proof', 'Board Reports'].map((feature, i) => (
+                {(solution as NormalizedSolution).benefit?.map((feature: string, i: number) => (
                   <div key={i} className="flex items-start gap-4">
                     <div className="w-6 h-6 rounded-full bg-sidqly-green-soft/30 flex items-center justify-center flex-shrink-0 mt-1">
                       <CheckCircle2 size={16} className="text-sidqly-green-deep" />
@@ -100,10 +116,10 @@ const SolutionDetail: React.FC = () => {
               </div>
               <div className="mt-12 space-y-6">
                 <p className="text-gray-600 leading-relaxed">
-                  Sidqly provides the specific tools needed to manage {solution.title.toLowerCase()} operations with integrity and clarity. From intake to reporting, every step is optimized for the needs of Islamic organizations.
+                  {(solution as NormalizedSolution).problem?.join(' ')} Sidqly provides the specific tools needed to manage {solution.title.toLowerCase()} operations with integrity and clarity. From intake to reporting, every step is optimized for the needs of Islamic organizations.
                 </p>
                 <div className="flex flex-wrap gap-4">
-                  <a href={brand.calendlyUrl} className="bg-sidqly-green-deep text-white px-8 py-3 rounded-xl font-bold hover:shadow-lg transition-all">Book Demo</a>
+                  <a href={brand.links?.calendly || 'https://calendly.com/d/dvzs-3zf-cgz'} className="bg-sidqly-green-deep text-white px-8 py-3 rounded-xl font-bold hover:shadow-lg transition-all">Book Demo</a>
                   <Link to="/pricing" className="bg-sidqly-ivory text-sidqly-navy px-8 py-3 rounded-xl font-bold hover:bg-gray-100 transition-all border border-gray-100">View Pricing</Link>
                 </div>
               </div>

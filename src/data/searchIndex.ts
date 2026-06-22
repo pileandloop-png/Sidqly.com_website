@@ -49,8 +49,8 @@ export const generateSearchIndex = (): SearchResult[] => {
     index.push({
       id: `module-${m.slug}`,
       type: 'Module',
-      title: m.name,
-      description: m.summary,
+      title: m.title,
+      description: m.desc,
       url: `/modules/${m.slug}`
     });
   });
