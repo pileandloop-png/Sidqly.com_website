@@ -32,3 +32,11 @@ Supported giving and operational contexts include: Eid, Eid ul Adha, Eid ul Fitr
 
 
 Sidqly provides operational workflow support for Islamic giving campaigns. It does not replace religious scholars, local committees, legal advisors, tax advisors, or official calendar authorities.
+
+## Use Cases FAQs
+- **Q:** Does Sidqly handle our bank payments directly?
+  **A:** No, Sidqly provides a Manual Payment Review workflow where you verify bank transfers your organization receives directly, ensuring full control and compliance.
+- **Q:** Does Sidqly determine who is eligible for Zakat?
+  **A:** No. Sidqly does not issue Zakat rulings or determine religious eligibility. It provides the software to track your committee’s operational decisions, documentation, and workflows.
+- **Q:** Can we track both large and small Qurbani animals?
+  **A:** Yes, Sidqly supports tracking individual shares (e.g., 1/7th of a cow) and whole animals (e.g., a goat or sheep).

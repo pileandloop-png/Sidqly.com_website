@@ -210,6 +210,155 @@ const Home: React.FC = () => {
         </div>
       </section>
 
+      {/* Start with your role */}
+      <section className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-5xl font-extrabold text-sidqly-navy mb-6">Start with your role</h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">See how Sidqly’s verified workflows solve your specific operational challenges.</p>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <Link to="/use-cases/mosques" className="p-8 rounded-2xl bg-sidqly-ivory border border-gray-100 hover:border-sidqly-green-soft hover:shadow-xl transition-all group">
+               <h3 className="text-xl font-bold text-sidqly-navy mb-2 group-hover:text-sidqly-green-deep">I manage a mosque</h3>
+               <p className="text-gray-600 text-sm">Donation management and Zakat tracking.</p>
+            </Link>
+            <Link to="/use-cases/islamic-charities" className="p-8 rounded-2xl bg-sidqly-ivory border border-gray-100 hover:border-sidqly-green-soft hover:shadow-xl transition-all group">
+               <h3 className="text-xl font-bold text-sidqly-navy mb-2 group-hover:text-sidqly-green-deep">I run an Islamic charity</h3>
+               <p className="text-gray-600 text-sm">Professional charity operations and donor-safe proof.</p>
+            </Link>
+            <Link to="/use-cases/qurbani-organizers" className="p-8 rounded-2xl bg-sidqly-ivory border border-gray-100 hover:border-sidqly-green-soft hover:shadow-xl transition-all group">
+               <h3 className="text-xl font-bold text-sidqly-navy mb-2 group-hover:text-sidqly-green-deep">I organize Qurbani</h3>
+               <p className="text-gray-600 text-sm">Share tracking, vendor assignment, and certificates.</p>
+            </Link>
+            <Link to="/use-cases/ramadan-ration-teams" className="p-8 rounded-2xl bg-sidqly-ivory border border-gray-100 hover:border-sidqly-green-soft hover:shadow-xl transition-all group">
+               <h3 className="text-xl font-bold text-sidqly-navy mb-2 group-hover:text-sidqly-green-deep">I manage Ramadan rations</h3>
+               <p className="text-gray-600 text-sm">Distribution tracking and donor-safe updates.</p>
+            </Link>
+            <Link to="/use-cases/sadaqah-campaign-teams" className="p-8 rounded-2xl bg-sidqly-ivory border border-gray-100 hover:border-sidqly-green-soft hover:shadow-xl transition-all group">
+               <h3 className="text-xl font-bold text-sidqly-navy mb-2 group-hover:text-sidqly-green-deep">I handle Zakat/Sadqa campaigns</h3>
+               <p className="text-gray-600 text-sm">Campaign tracking and fund separation.</p>
+            </Link>
+            <Link to="/use-cases/donors" className="p-8 rounded-2xl bg-sidqly-ivory border border-gray-100 hover:border-sidqly-green-soft hover:shadow-xl transition-all group">
+               <h3 className="text-xl font-bold text-sidqly-navy mb-2 group-hover:text-sidqly-green-deep">I am a donor</h3>
+               <p className="text-gray-600 text-sm">Verified giving updates and receipts.</p>
+            </Link>
+            <Link to="/use-cases/volunteers" className="p-8 rounded-2xl bg-sidqly-ivory border border-gray-100 hover:border-sidqly-green-soft hover:shadow-xl transition-all group">
+               <h3 className="text-xl font-bold text-sidqly-navy mb-2 group-hover:text-sidqly-green-deep">I am a volunteer</h3>
+               <p className="text-gray-600 text-sm">Task assignment and field proof upload.</p>
+            </Link>
+            <Link to="/use-cases/vendors" className="p-8 rounded-2xl bg-sidqly-ivory border border-gray-100 hover:border-sidqly-green-soft hover:shadow-xl transition-all group">
+               <h3 className="text-xl font-bold text-sidqly-navy mb-2 group-hover:text-sidqly-green-deep">I am a vendor</h3>
+               <p className="text-gray-600 text-sm">Fulfillment tracking and proof upload.</p>
+            </Link>
+            <Link to="/use-cases/corporate-sponsors" className="p-8 rounded-2xl bg-sidqly-ivory border border-gray-100 hover:border-sidqly-green-soft hover:shadow-xl transition-all group">
+               <h3 className="text-xl font-bold text-sidqly-navy mb-2 group-hover:text-sidqly-green-deep">I am a corporate sponsor</h3>
+               <p className="text-gray-600 text-sm">Board-ready, audit-compliant charity reports.</p>
+            </Link>
+          </div>
+          <div className="text-center mt-12">
+            <Link to="/use-cases" className="inline-flex items-center gap-2 text-sidqly-green-deep font-bold hover:underline">
+              View all use cases <ArrowRight size={16} />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Popular Sidqly searches */}
+      <section className="py-12 bg-sidqly-ivory border-y border-gray-100">
+         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex flex-wrap justify-center items-center gap-4 text-sm">
+               <span className="font-bold text-gray-500 mr-2">Popular searches:</span>
+               <Link to="/resources/qurbani-operations" className="bg-white px-4 py-2 rounded-full border border-gray-200 text-sidqly-navy hover:border-sidqly-green-soft transition-colors">Qurbani</Link>
+               <Link to="/resources/ramadan-giving" className="bg-white px-4 py-2 rounded-full border border-gray-200 text-sidqly-navy hover:border-sidqly-green-soft transition-colors">Ramadan</Link>
+               <Link to="/use-cases/zakat-committees" className="bg-white px-4 py-2 rounded-full border border-gray-200 text-sidqly-navy hover:border-sidqly-green-soft transition-colors">Zakat</Link>
+               <Link to="/resources/sadqa-fitr" className="bg-white px-4 py-2 rounded-full border border-gray-200 text-sidqly-navy hover:border-sidqly-green-soft transition-colors">Sadqa Fitr</Link>
+               <Link to="/qibla-direction" className="bg-white px-4 py-2 rounded-full border border-gray-200 text-sidqly-navy hover:border-sidqly-green-soft transition-colors">Qibla</Link>
+               <Link to="/islamic-calendar" className="bg-white px-4 py-2 rounded-full border border-gray-200 text-sidqly-navy hover:border-sidqly-green-soft transition-colors">Islamic Calendar</Link>
+               <Link to="/compare/verified-giving" className="bg-white px-4 py-2 rounded-full border border-gray-200 text-sidqly-navy hover:border-sidqly-green-soft transition-colors">Donor-Safe Proof</Link>
+               <Link to="/compare/manual-payment-review" className="bg-white px-4 py-2 rounded-full border border-gray-200 text-sidqly-navy hover:border-sidqly-green-soft transition-colors">Manual Payment Review</Link>
+               <Link to="/compare/corporate-reporting" className="bg-white px-4 py-2 rounded-full border border-gray-200 text-sidqly-navy hover:border-sidqly-green-soft transition-colors">Corporate Reports</Link>
+            </div>
+         </div>
+      </section>
+
+      {/* Islamic tools for giving teams & Seasonal guides */}
+      <section className="py-24 bg-white">
+         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid lg:grid-cols-2 gap-16">
+               <div>
+                  <h2 className="text-3xl font-extrabold text-sidqly-navy mb-8">Islamic tools for giving teams</h2>
+                  <div className="grid sm:grid-cols-2 gap-4">
+                     <Link to="/islamic-calendar" className="p-6 rounded-2xl bg-sidqly-ivory border border-gray-100 hover:border-sidqly-green-soft transition-colors group">
+                        <h4 className="font-bold text-sidqly-navy group-hover:text-sidqly-green-deep">Islamic Calendar</h4>
+                        <p className="text-sm text-gray-500 mt-2">Hijri dates for operations.</p>
+                     </Link>
+                     <Link to="/qibla-direction" className="p-6 rounded-2xl bg-sidqly-ivory border border-gray-100 hover:border-sidqly-green-soft transition-colors group">
+                        <h4 className="font-bold text-sidqly-navy group-hover:text-sidqly-green-deep">Qibla Direction</h4>
+                        <p className="text-sm text-gray-500 mt-2">Logistics compass.</p>
+                     </Link>
+                     <Link to="/ramadan-planner" className="p-6 rounded-2xl bg-sidqly-ivory border border-gray-100 hover:border-sidqly-green-soft transition-colors group">
+                        <h4 className="font-bold text-sidqly-navy group-hover:text-sidqly-green-deep">Ramadan Planner</h4>
+                        <p className="text-sm text-gray-500 mt-2">Iftar tracking checklists.</p>
+                     </Link>
+                     <Link to="/eid-qurbani-planner" className="p-6 rounded-2xl bg-sidqly-ivory border border-gray-100 hover:border-sidqly-green-soft transition-colors group">
+                        <h4 className="font-bold text-sidqly-navy group-hover:text-sidqly-green-deep">Qurbani Planner</h4>
+                        <p className="text-sm text-gray-500 mt-2">Share and slaughter guides.</p>
+                     </Link>
+                     <Link to="/hajj-countdown" className="p-6 rounded-2xl bg-sidqly-ivory border border-gray-100 hover:border-sidqly-green-soft transition-colors group">
+                        <h4 className="font-bold text-sidqly-navy group-hover:text-sidqly-green-deep">Hajj Countdown</h4>
+                        <p className="text-sm text-gray-500 mt-2">Dhul Hijjah prep.</p>
+                     </Link>
+                     <Link to="/sadqa-zakat-planner" className="p-6 rounded-2xl bg-sidqly-ivory border border-gray-100 hover:border-sidqly-green-soft transition-colors group">
+                        <h4 className="font-bold text-sidqly-navy group-hover:text-sidqly-green-deep">Sadqa/Zakat Planner</h4>
+                        <p className="text-sm text-gray-500 mt-2">Fund separation guides.</p>
+                     </Link>
+                  </div>
+               </div>
+
+               <div>
+                  <h2 className="text-3xl font-extrabold text-sidqly-navy mb-8">Seasonal giving guides</h2>
+                  <div className="space-y-4">
+                     <Link to="/resources/eid-giving" className="block p-6 rounded-2xl bg-sidqly-navy text-white hover:bg-sidqly-green-deep transition-colors">
+                        <div className="flex justify-between items-center">
+                           <h4 className="font-bold text-lg">Eid Giving Guide</h4>
+                           <ArrowRight size={20} className="text-sidqly-gold" />
+                        </div>
+                        <p className="text-sm text-gray-400 mt-2">Manage Eid giving and community campaigns.</p>
+                     </Link>
+                     <Link to="/resources/qurbani-operations" className="block p-6 rounded-2xl bg-sidqly-navy text-white hover:bg-sidqly-green-deep transition-colors">
+                        <div className="flex justify-between items-center">
+                           <h4 className="font-bold text-lg">Qurbani Operations Guide</h4>
+                           <ArrowRight size={20} className="text-sidqly-gold" />
+                        </div>
+                        <p className="text-sm text-gray-400 mt-2">Vendor assignments, proof, and certificates.</p>
+                     </Link>
+                     <Link to="/resources/ramadan-giving" className="block p-6 rounded-2xl bg-sidqly-navy text-white hover:bg-sidqly-green-deep transition-colors">
+                        <div className="flex justify-between items-center">
+                           <h4 className="font-bold text-lg">Ramadan Giving Guide</h4>
+                           <ArrowRight size={20} className="text-sidqly-gold" />
+                        </div>
+                        <p className="text-sm text-gray-400 mt-2">Iftar support and ration pack workflows.</p>
+                     </Link>
+                     <Link to="/resources/sadqa-fitr" className="block p-6 rounded-2xl bg-sidqly-navy text-white hover:bg-sidqly-green-deep transition-colors">
+                        <div className="flex justify-between items-center">
+                           <h4 className="font-bold text-lg">Sadqa Fitr & Sadaqah</h4>
+                           <ArrowRight size={20} className="text-sidqly-gold" />
+                        </div>
+                        <p className="text-sm text-gray-400 mt-2">Manage campaigns and family support.</p>
+                     </Link>
+                     <Link to="/resources/aqiqa-charity-workflow" className="block p-6 rounded-2xl bg-sidqly-navy text-white hover:bg-sidqly-green-deep transition-colors">
+                        <div className="flex justify-between items-center">
+                           <h4 className="font-bold text-lg">Aqiqa Workflow</h4>
+                           <ArrowRight size={20} className="text-sidqly-gold" />
+                        </div>
+                        <p className="text-sm text-gray-400 mt-2">Charity requests and vendor fulfillment.</p>
+                     </Link>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
       {/* Trust Pillars */}
       <section className="py-24 bg-sidqly-ivory border-y border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import SearchModal from './search/SearchModal';
-import { Menu, X, ChevronDown } from 'lucide-react';
+import { Menu, X, ChevronDown, Search } from 'lucide-react';
 import { brand } from '../config/brand';
 
 const Navbar: React.FC = () => {
@@ -20,27 +20,39 @@ const Navbar: React.FC = () => {
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, []);
 
-      const navigation = [
-
+  const navigation = [
     { name: "Features", href: "/features" },
     { name: 'Modules', href: '/modules' },
-    { name: 'Solutions', href: '/solutions' },
+    { name: 'Use Cases', href: '/use-cases' },
     { name: 'Pricing', href: '/pricing' },
     {
       name: 'Resources',
       href: '/resources',
       children: [
-        { name: 'All Resources', href: '/resources' },
+        { name: 'Resources Hub', href: '/resources' },
+        { name: 'Seasonal Giving Guides', href: '/resources/eid-giving' },
+        { name: 'Blog', href: '/blog' },
+        { name: 'Compare', href: '/compare' },
+        { name: 'Glossary', href: '/islamic-glossary' },
+        { name: 'Request Organization', href: '/request-organization' }
+      ]
+    },
+    {
+      name: 'Islamic Tools',
+      href: '/islamic-utilities',
+      children: [
+        { name: 'Islamic Utilities', href: '/islamic-utilities' },
         { name: 'Islamic Calendar', href: '/islamic-calendar' },
         { name: 'Qibla Direction', href: '/qibla-direction' },
-        { name: 'Ramadan Planner', href: '/ramadan-planner' },
-        { name: 'Qurbani Planner', href: '/eid-qurbani-planner' },
+        { name: 'Moon Phase', href: '/moon-phase-islamic-calendar' },
+        { name: 'Weather-Aware Distribution', href: '/weather-charity-distribution' },
         { name: 'Hajj Countdown', href: '/hajj-countdown' },
+        { name: 'Ramadan Planner', href: '/ramadan-planner' },
+        { name: 'Eid/Qurbani Planner', href: '/eid-qurbani-planner' },
         { name: 'Sadqa/Zakat Planner', href: '/sadqa-zakat-planner' },
         { name: 'Islamic Glossary', href: '/islamic-glossary' }
       ]
     },
-    { name: 'Blog', href: '/blog' },
     { name: 'Trust', href: '/trust-center' },
     { name: 'Demo', href: brand.links?.calendly || 'https://calendly.com/d/dvzs-3zf-cgz', external: true }
   ] as Array<{ name: string; href: string; external?: boolean; children?: Array<{ name: string; href: string; }> }>;
@@ -60,6 +72,19 @@ const Navbar: React.FC = () => {
 
           {/* Desktop Nav */}
           <div className="hidden lg:flex items-center space-x-8">
+            {/* Desktop Search Bar */}
+            <div className="relative mx-4">
+              <button
+                onClick={() => setIsSearchOpen(true)}
+                className="flex items-center gap-2 bg-gray-50 border border-gray-200 hover:border-sidqly-green-emerald hover:bg-white text-gray-400 px-4 py-2 rounded-full transition-all w-64 xl:w-80 text-sm focus:outline-none focus:ring-2 focus:ring-sidqly-green-emerald"
+                aria-label="Search Sidqly modules, Islamic tools, resources, and FAQs"
+              >
+                <Search size={16} />
+                <span className="flex-1 text-left">Search Sidqly...</span>
+                <span className="hidden xl:inline-block px-1.5 py-0.5 rounded-md border border-gray-200 bg-white text-xs font-mono font-bold text-gray-400">/</span>
+              </button>
+            </div>
+
             {navigation.map((item) => (
               <div key={item.name} className="relative group">
                 {item.children ? (
@@ -106,8 +131,15 @@ const Navbar: React.FC = () => {
             </div>
           </div>
 
-          {/* Mobile menu button */}
-          <div className="lg:hidden flex items-center">
+          {/* Mobile menu button & search */}
+          <div className="lg:hidden flex items-center gap-2">
+            <button
+              onClick={() => setIsSearchOpen(true)}
+              className="text-gray-600 hover:text-sidqly-green-deep p-2"
+              aria-label="Search"
+            >
+              <Search size={24} />
+            </button>
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="text-gray-600 hover:text-sidqly-green-deep p-2"

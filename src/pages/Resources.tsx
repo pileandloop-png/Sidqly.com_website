@@ -192,6 +192,44 @@ const Resources: React.FC = () => {
       </section>
 
       {/* Buyer & Trust Resources */}
+      {/* Tools & Core Resources */}
+      <section className="py-16 bg-sidqly-ivory">
+         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid md:grid-cols-3 gap-8">
+               <div className="bg-white p-8 rounded-2xl border border-gray-100">
+                  <h3 className="text-xl font-bold text-sidqly-navy mb-6">Islamic Utilities</h3>
+                  <ul className="space-y-4">
+                     <li><Link to="/islamic-utilities" className="text-gray-600 hover:text-sidqly-green-deep font-medium flex items-center gap-2 transition-colors"><ArrowRight size={14} className="text-sidqly-green-emerald" /> All Utilities</Link></li>
+                     <li><Link to="/islamic-calendar" className="text-gray-600 hover:text-sidqly-green-deep font-medium flex items-center gap-2 transition-colors"><ArrowRight size={14} className="text-sidqly-green-emerald" /> Islamic Calendar</Link></li>
+                     <li><Link to="/qibla-direction" className="text-gray-600 hover:text-sidqly-green-deep font-medium flex items-center gap-2 transition-colors"><ArrowRight size={14} className="text-sidqly-green-emerald" /> Qibla Direction</Link></li>
+                     <li><Link to="/moon-phase-islamic-calendar" className="text-gray-600 hover:text-sidqly-green-deep font-medium flex items-center gap-2 transition-colors"><ArrowRight size={14} className="text-sidqly-green-emerald" /> Moon Phase</Link></li>
+                     <li><Link to="/weather-charity-distribution" className="text-gray-600 hover:text-sidqly-green-deep font-medium flex items-center gap-2 transition-colors"><ArrowRight size={14} className="text-sidqly-green-emerald" /> Weather Planning</Link></li>
+                  </ul>
+               </div>
+               <div className="bg-white p-8 rounded-2xl border border-gray-100">
+                  <h3 className="text-xl font-bold text-sidqly-navy mb-6">Planning Tools</h3>
+                  <ul className="space-y-4">
+                     <li><Link to="/ramadan-planner" className="text-gray-600 hover:text-sidqly-green-deep font-medium flex items-center gap-2 transition-colors"><ArrowRight size={14} className="text-sidqly-green-emerald" /> Ramadan Planner</Link></li>
+                     <li><Link to="/eid-qurbani-planner" className="text-gray-600 hover:text-sidqly-green-deep font-medium flex items-center gap-2 transition-colors"><ArrowRight size={14} className="text-sidqly-green-emerald" /> Eid/Qurbani Planner</Link></li>
+                     <li><Link to="/hajj-countdown" className="text-gray-600 hover:text-sidqly-green-deep font-medium flex items-center gap-2 transition-colors"><ArrowRight size={14} className="text-sidqly-green-emerald" /> Hajj Countdown</Link></li>
+                     <li><Link to="/sadqa-zakat-planner" className="text-gray-600 hover:text-sidqly-green-deep font-medium flex items-center gap-2 transition-colors"><ArrowRight size={14} className="text-sidqly-green-emerald" /> Sadqa/Zakat Planner</Link></li>
+                  </ul>
+               </div>
+               <div className="bg-white p-8 rounded-2xl border border-gray-100">
+                  <h3 className="text-xl font-bold text-sidqly-navy mb-6">Use Case Hubs</h3>
+                  <ul className="space-y-4">
+                     <li><Link to="/use-cases" className="text-gray-600 hover:text-sidqly-green-deep font-medium flex items-center gap-2 transition-colors"><ArrowRight size={14} className="text-sidqly-green-emerald" /> All Use Cases</Link></li>
+                     <li><Link to="/use-cases/mosques" className="text-gray-600 hover:text-sidqly-green-deep font-medium flex items-center gap-2 transition-colors"><ArrowRight size={14} className="text-sidqly-green-emerald" /> Mosques</Link></li>
+                     <li><Link to="/use-cases/islamic-charities" className="text-gray-600 hover:text-sidqly-green-deep font-medium flex items-center gap-2 transition-colors"><ArrowRight size={14} className="text-sidqly-green-emerald" /> Islamic Charities</Link></li>
+                     <li><Link to="/use-cases/qurbani-organizers" className="text-gray-600 hover:text-sidqly-green-deep font-medium flex items-center gap-2 transition-colors"><ArrowRight size={14} className="text-sidqly-green-emerald" /> Qurbani Organizers</Link></li>
+                     <li><Link to="/use-cases/ramadan-ration-teams" className="text-gray-600 hover:text-sidqly-green-deep font-medium flex items-center gap-2 transition-colors"><ArrowRight size={14} className="text-sidqly-green-emerald" /> Ramadan Ration Teams</Link></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      {/* Buyer & Trust Resources */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
            <div className="grid md:grid-cols-2 gap-16">
@@ -200,13 +238,13 @@ const Resources: React.FC = () => {
                     <FileText className="text-sidqly-green-emerald" /> Featured Guides & Resources
                  </h2>
                  <ul className="space-y-4">
-                    <li><Link to="/resources/featured-guides" className="text-gray-600 hover:text-sidqly-green-deep font-medium flex items-center gap-2 transition-colors"><ArrowRight size={14} className="text-sidqly-green-emerald" /> Featured Guides</Link></li>
-                    <li><Link to="/resources/module-guides" className="text-gray-600 hover:text-sidqly-green-deep font-medium flex items-center gap-2 transition-colors"><ArrowRight size={14} className="text-sidqly-green-emerald" /> Module Guides</Link></li>
+                    <li><Link to="/resources/eid-giving" className="text-gray-600 hover:text-sidqly-green-deep font-medium flex items-center gap-2 transition-colors"><ArrowRight size={14} className="text-sidqly-green-emerald" /> Seasonal Islamic Giving Guides</Link></li>
+                    <li><Link to="/use-cases" className="text-gray-600 hover:text-sidqly-green-deep font-medium flex items-center gap-2 transition-colors"><ArrowRight size={14} className="text-sidqly-green-emerald" /> Use Case Guides</Link></li>
+                    <li><Link to="/modules" className="text-gray-600 hover:text-sidqly-green-deep font-medium flex items-center gap-2 transition-colors"><ArrowRight size={14} className="text-sidqly-green-emerald" /> Module Guides</Link></li>
                     <li><Link to="/resources/workflow-playbooks" className="text-gray-600 hover:text-sidqly-green-deep font-medium flex items-center gap-2 transition-colors"><ArrowRight size={14} className="text-sidqly-green-emerald" /> Workflow Playbooks</Link></li>
                     <li><Link to="/resources/stakeholder-resources" className="text-gray-600 hover:text-sidqly-green-deep font-medium flex items-center gap-2 transition-colors"><ArrowRight size={14} className="text-sidqly-green-emerald" /> Stakeholder Resources</Link></li>
-                    <li><Link to="/resources/comparison-guides" className="text-gray-600 hover:text-sidqly-green-deep font-medium flex items-center gap-2 transition-colors"><ArrowRight size={14} className="text-sidqly-green-emerald" /> Comparison Guides</Link></li>
-                    <li><Link to="/resources/trust-and-safety" className="text-gray-600 hover:text-sidqly-green-deep font-medium flex items-center gap-2 transition-colors"><ArrowRight size={14} className="text-sidqly-green-emerald" /> Trust and Safety Resources</Link></li>
-                    <li><Link to="/resources/glossary" className="text-gray-600 hover:text-sidqly-green-deep font-medium flex items-center gap-2 transition-colors"><ArrowRight size={14} className="text-sidqly-green-emerald" /> Glossary</Link></li>
+                    <li><Link to="/compare" className="text-gray-600 hover:text-sidqly-green-deep font-medium flex items-center gap-2 transition-colors"><ArrowRight size={14} className="text-sidqly-green-emerald" /> Comparison Guides</Link></li>
+                    <li><Link to="/islamic-glossary" className="text-gray-600 hover:text-sidqly-green-deep font-medium flex items-center gap-2 transition-colors"><ArrowRight size={14} className="text-sidqly-green-emerald" /> Glossary</Link></li>
                     <li><Link to="/request-organization" className="text-gray-600 hover:text-sidqly-green-deep font-medium flex items-center gap-2 transition-colors"><ArrowRight size={14} className="text-sidqly-green-emerald" /> Request Your Organization</Link></li>
                  </ul>
               </div>
