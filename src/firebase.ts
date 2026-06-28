@@ -8,7 +8,7 @@ const firebaseConfig = {
   storageBucket: "sidqly-15-june.firebasestorage.app",
   messagingSenderId: "656417734269",
   appId: "1:656417734269:web:65f3573bbd8074770ffb14",
-  measurementId: "G-T3TXNGSGZ8"
+  measurementId: "G-W450Z1KBNS"
 };
 
 // Initialize Firebase
