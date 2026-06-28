@@ -57,6 +57,7 @@ const Modules: React.FC = () => {
         <SEO
           title={`${currentModule.title} Module`}
           description={currentModule.desc}
+          canonical={`/modules/${currentModule.slug}`}
         />
         <section className="py-20 bg-sidqly-ivory">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

@@ -5,9 +5,12 @@ Last updated: 2026-06-12
 Sidqly is designed for modern Islamic organizations, including mosques, charities, Zakat committees, Qurbani providers, and Ramadan food drive teams.
 
 ## Core Value Proposition
-- **Verified Giving:** Manual review of every payment.
-- **Protected Dignity:** Recipient identity protection (Dignity-Safe Proof).
-- **Clear Impact:** Professional reporting for boards and donors.
+- **Verified giving**
+- **Protected dignity**
+- **Manual payment review**
+- **Proof approval**
+- **Donor-safe impact updates**
+- **Audit-ready Islamic charity operations**
 
 ## What Sidqly is NOT
 - NOT a simple donation app.

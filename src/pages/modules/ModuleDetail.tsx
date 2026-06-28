@@ -4,7 +4,7 @@ import SEO from '../../components/SEO';
 import { modules } from '../../data/solutions_modules';
 import { brand } from '../../config/brand';
 import { Box, ChevronRight, CheckCircle2, ShieldCheck, Share2, FileText, ChevronDown, ArrowRight, Link as LinkIcon } from 'lucide-react';
-import { generateServiceSchema, generateBreadcrumbSchema, generateHowToSchema } from '../../lib/schema';
+import { generateServiceSchema, generateBreadcrumbSchema, generateHowToSchema, generateFAQSchema } from '../../lib/schema';
 
 const ModuleDetail: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -26,6 +26,8 @@ const ModuleDetail: React.FC = () => {
     "@graph": [
       generateServiceSchema(moduleData.title, moduleData.desc, `/modules/${moduleData.slug}`),
       ...(moduleData.workflow ? [generateHowToSchema(`How ${moduleData.title} Works`, moduleData.problem || moduleData.desc, moduleData.workflow)] : []),
+      // @ts-expect-error faqs property is not guaranteed on all moduleData
+      ...(moduleData.faqs && moduleData.faqs.length > 0 ? [generateFAQSchema(moduleData.faqs)] : []),
       generateBreadcrumbSchema([
         { name: "Home", item: "/" },
         { name: "Modules", item: "/modules" },

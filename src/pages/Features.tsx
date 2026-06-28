@@ -5,8 +5,25 @@ import { brand } from '../config/brand';
 import { CheckCircle2, Shield, Users, BarChart, Zap, Globe } from 'lucide-react';
 import OperatingJourney from '../components/diagrams/OperatingJourney';
 import ManualPaymentReview from '../components/diagrams/ManualPaymentReview';
+import { generateWebPageSchema, generateServiceSchema, generateBreadcrumbSchema } from '../lib/schema';
 
 const Features: React.FC = () => {
+  const schema = {
+    "@context": "https://schema.org",
+    "@graph": [
+      generateWebPageSchema(
+        "Sidqly Features | Verified Giving, Proof Review, and Donor-Safe Updates",
+        "Explore Sidqly features for manual payment review, proof approval, donor-safe impact updates, Zakat fund separation, Sadaqah campaigns, Qurbani operations, Ramadan distribution, receipts, certificates, and audit-ready reports.",
+        "/features"
+      ),
+      generateServiceSchema("Sidqly Platform Features", "Manual payment review, proof approval, and dignity-safe reporting.", "/features"),
+      generateBreadcrumbSchema([
+        { name: "Home", item: "/" },
+        { name: "Features", item: "/features" }
+      ])
+    ]
+  };
+
   const featureGroups = [
     {
       title: "Trust & Verification",
@@ -52,7 +69,12 @@ const Features: React.FC = () => {
 
   return (
     <>
-      <SEO title="Platform Features" canonical="/features" />
+      <SEO
+        title="Sidqly Features | Verified Giving, Proof Review, and Donor-Safe Updates"
+        description="Explore Sidqly features for manual payment review, proof approval, donor-safe impact updates, Zakat fund separation, Sadaqah campaigns, Qurbani operations, Ramadan distribution, receipts, certificates, and audit-ready reports."
+        canonical="/features"
+        schema={schema}
+      />
       <section className="py-20 bg-sidqly-navy text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-6xl font-extrabold mb-8 text-center">Powerful features for professional teams.</h1>

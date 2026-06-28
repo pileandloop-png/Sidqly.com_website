@@ -10,7 +10,7 @@ interface StaticPageProps {
 const StaticPage: React.FC<StaticPageProps> = ({ title, description, content }) => {
   return (
     <>
-      <SEO title={title} description={description} />
+      <SEO title={title} description={description} canonical="/" />
       <section className="py-20 bg-sidqly-ivory min-h-screen">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl font-bold text-sidqly-navy mb-10">{title}</h1>

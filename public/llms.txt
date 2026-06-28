@@ -9,12 +9,15 @@ This site permits AI and search engine crawlers to crawl, index, summarize, and 
 > Project Stack: React 19, Vite 6, Tailwind CSS, Firebase Ecosystem
 
 ## Description
-Sidqly is an optimized, high-performance web platform built utilizing cutting-edge client-side rendering architecture. The interface provides user-centric experiences, engineered for speed, responsiveness, and minimal layout shift.
+Sidqly is a practical, public-facing platform useful for mosques, Islamic charities, donors, volunteers, vendors, corporate sponsors, Zakat teams, Sadaqah teams, Qurbani teams, and Ramadan distribution teams.
 
 ## Core Features
-- Modern Application Interface: Powered by React 19 concurrent rendering.
-- Scalable Cloud Backed Infrastructure: Hosted globally via Firebase CDN network nodes.
-- High SEO Visibility: Fully compliant semantic DOM structure accessible cleanly to search indexers.
+- Verified giving
+- Protected dignity
+- Manual payment review
+- Proof approval
+- Donor-safe impact updates
+- Audit-ready Islamic charity operations
 
 Available summaries and context files:
 - /ai-summary.md

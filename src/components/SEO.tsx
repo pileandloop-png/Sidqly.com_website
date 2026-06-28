@@ -32,20 +32,20 @@ const SEO: React.FC<SEOProps> = ({
   schema
 }) => {
   const fullTitle = title ? `${title} | ${brand.name}` : `${brand.name} | Verified Giving & Protected Dignity`;
-  const url = canonical ? `${brand.domain}${canonical}` : brand.domain;
+  const url = canonical ? `${brand.domain}${canonical}` : null;
 
   return (
     <Helmet>
       <title>{fullTitle}</title>
       <meta name="description" content={description} />
-      <link rel="canonical" href={url} />
+      {url && <link rel="canonical" href={url} />}
       <meta name="robots" content={robots} />
       {focusKeyword && <meta name="keywords" content={[focusKeyword, ...(secondaryKeywords || [])].join(', ')} />}
 
       <meta property="og:title" content={ogTitle || fullTitle} />
       <meta property="og:description" content={ogDescription || description} />
       <meta property="og:type" content={ogType} />
-      <meta property="og:url" content={url} />
+      {url && <meta property="og:url" content={url} />}
       <meta property="og:image" content={`${brand.domain}/brand/sidqly-og.svg`} />
 
       <meta name="twitter:card" content="summary_large_image" />

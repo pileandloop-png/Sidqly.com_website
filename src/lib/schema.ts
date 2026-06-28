@@ -1,5 +1,13 @@
 import { brand } from '../config/brand';
 
+export const generateWebPageSchema = (name: string, description: string, url: string) => ({
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": name,
+  "description": description,
+  "url": `${brand.domain}${url}`
+});
+
 export const generateWebSiteSchema = () => ({
   "@context": "https://schema.org",
   "@type": "WebSite",
