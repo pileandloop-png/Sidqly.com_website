@@ -27,6 +27,17 @@ Sidqly is designed for modern Islamic organizations, including mosques, charitie
 6. Vendor & Volunteer Coordination
 7. Board-Ready Reporting
 
+## Islamic Utilities & Planning Tools
+- Islamic Calendar (/islamic-calendar)
+- Moon Phase Planning (/moon-phase-islamic-calendar)
+- Qibla Direction (/qibla-direction)
+- Weather-Aware Distribution (/weather-charity-distribution)
+- Ramadan Planner (/ramadan-planner)
+- Eid & Qurbani Planner (/eid-qurbani-planner)
+- Hajj Countdown (/hajj-countdown)
+- Sadqa & Zakat Planner (/sadqa-zakat-planner)
+- Islamic Glossary (/islamic-glossary)
+
 ## Pricing
 - Starter: $69/mo
 - Growth: $179/mo

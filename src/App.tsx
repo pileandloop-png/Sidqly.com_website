@@ -35,6 +35,17 @@ import SitemapPage from './pages/SitemapPage';
 import AISearchReadiness from './pages/AISearchReadiness';
 import Resources from './pages/Resources';
 
+// Islamic Utilities Pages
+import IslamicCalendarPage from './pages/islamic/IslamicCalendarPage';
+import MoonPhasePage from './pages/islamic/MoonPhasePage';
+import QiblaDirectionPage from './pages/islamic/QiblaDirectionPage';
+import WeatherPlanningPage from './pages/islamic/WeatherPlanningPage';
+import HajjCountdownPage from './pages/islamic/HajjCountdownPage';
+import RamadanPlannerPage from './pages/islamic/RamadanPlannerPage';
+import EidQurbaniPlannerPage from './pages/islamic/EidQurbaniPlannerPage';
+import SadqaZakatPlannerPage from './pages/islamic/SadqaZakatPlannerPage';
+import IslamicGlossaryPage from './pages/islamic/IslamicGlossaryPage';
+
 // Dynamic Templates
 import BlogIndex from './pages/blog/BlogIndex';
 import BlogPost from './pages/blog/BlogPost';
@@ -146,6 +157,17 @@ function App() {
 
             <Route path="compare/:slug" element={<CompareDetail />} />
             <Route path="alternatives/:slug" element={<CompareDetail />} />
+
+            {/* Islamic Utilities Routes */}
+            <Route path="islamic-calendar" element={<IslamicCalendarPage />} />
+            <Route path="moon-phase-islamic-calendar" element={<MoonPhasePage />} />
+            <Route path="qibla-direction" element={<QiblaDirectionPage />} />
+            <Route path="weather-charity-distribution" element={<WeatherPlanningPage />} />
+            <Route path="hajj-countdown" element={<HajjCountdownPage />} />
+            <Route path="ramadan-planner" element={<RamadanPlannerPage />} />
+            <Route path="eid-qurbani-planner" element={<EidQurbaniPlannerPage />} />
+            <Route path="sadqa-zakat-planner" element={<SadqaZakatPlannerPage />} />
+            <Route path="islamic-glossary" element={<IslamicGlossaryPage />} />
 
             {/* Resources Routes */}
             <Route path="resources" element={<Resources />} />

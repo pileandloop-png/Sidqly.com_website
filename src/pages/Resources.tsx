@@ -37,6 +37,30 @@ const Resources: React.FC = () => {
         </div>
       </section>
 
+      {/* Islamic Utilities and Planning Tools */}
+      <section className="py-20 bg-white border-b border-gray-100">
+         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-3xl font-bold text-sidqly-navy mb-12 text-center">Islamic Utilities & Planning Tools</h2>
+            <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-6">
+               {[
+                  { name: "Islamic Calendar", link: "/islamic-calendar" },
+                  { name: "Qibla Direction", link: "/qibla-direction" },
+                  { name: "Moon Phase Planning", link: "/moon-phase-islamic-calendar" },
+                  { name: "Weather-Aware Distribution", link: "/weather-charity-distribution" },
+                  { name: "Ramadan Planner", link: "/ramadan-planner" },
+                  { name: "Eid/Qurbani Planner", link: "/eid-qurbani-planner" },
+                  { name: "Hajj Countdown", link: "/hajj-countdown" },
+                  { name: "Sadqa/Zakat Planner", link: "/sadqa-zakat-planner" },
+                  { name: "Islamic Glossary", link: "/islamic-glossary" }
+               ].map((tool, i) => (
+                  <Link key={i} to={tool.link} className="bg-sidqly-ivory p-6 rounded-2xl border border-gray-100 hover:border-sidqly-green-emerald hover:shadow-md transition-all text-center group">
+                     <span className="text-sm font-bold text-sidqly-navy group-hover:text-sidqly-green-deep transition-colors leading-tight block">{tool.name}</span>
+                  </Link>
+               ))}
+            </div>
+         </div>
+      </section>
+
             {/* Seasonal Guides Section */}
       <section className="py-24 bg-sidqly-ivory">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

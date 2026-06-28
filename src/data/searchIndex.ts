@@ -12,6 +12,71 @@ export const generateSearchIndex = (): SearchResult[] => {
   const index: SearchResult[] = [];
 
   // Core Pages
+  // Islamic Utilities
+  index.push({
+    id: 'util-islamic-calendar',
+    type: 'Page',
+    title: 'Islamic Calendar & Hijri Date',
+    description: 'Current Islamic date, Hijri calendar planning, and countdown estimates.',
+    url: '/islamic-calendar'
+  });
+  index.push({
+    id: 'util-qibla-direction',
+    type: 'Page',
+    title: 'Qibla Direction Tool',
+    description: 'Calculate approximate Qibla direction, compass for site logistics.',
+    url: '/qibla-direction'
+  });
+  index.push({
+    id: 'util-moon-phase',
+    type: 'Page',
+    title: 'Moon Phase & Lunar Planning',
+    description: 'Approximate lunar phase for Islamic charity operations planning.',
+    url: '/moon-phase-islamic-calendar'
+  });
+  index.push({
+    id: 'util-weather-planning',
+    type: 'Page',
+    title: 'Weather-Aware Distribution Planning',
+    description: 'Weather guidance for safe charity distribution and volunteer operations.',
+    url: '/weather-charity-distribution'
+  });
+  index.push({
+    id: 'util-ramadan-planner',
+    type: 'Page',
+    title: 'Ramadan Planner & Calendar',
+    description: 'Ramadan countdown, Iftar operations checklist, and Suhoor/Sehri preparation.',
+    url: '/ramadan-planner'
+  });
+  index.push({
+    id: 'util-eid-qurbani-planner',
+    type: 'Page',
+    title: 'Eid & Qurbani Planner',
+    description: 'Checklist for Eid ul Adha, Eid ul Fitr, Qurbani, and Udhiya operations.',
+    url: '/eid-qurbani-planner'
+  });
+  index.push({
+    id: 'util-hajj-countdown',
+    type: 'Page',
+    title: 'Hajj Countdown',
+    description: 'Dhul Hijjah operations planner and countdown.',
+    url: '/hajj-countdown'
+  });
+  index.push({
+    id: 'util-sadqa-zakat-planner',
+    type: 'Page',
+    title: 'Sadqa & Zakat Planner',
+    description: 'Sadqa Fitr preparation and Zakat fund separation checklists.',
+    url: '/sadqa-zakat-planner'
+  });
+  index.push({
+    id: 'util-islamic-glossary',
+    type: 'Page',
+    title: 'Islamic Glossary',
+    description: 'Definitions of Islamic charity terms like Zakat, Sadaqah, Aqiqa/Aqiqah, and Qurbani in an operational context.',
+    url: '/islamic-glossary'
+  });
+
   index.push({
     id: 'page-home',
     type: 'Page',

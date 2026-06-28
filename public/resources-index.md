@@ -1,5 +1,16 @@
 
 
+## Islamic Planning Utilities
+- /islamic-calendar : Current Islamic date and Hijri calendar planning
+- /moon-phase-islamic-calendar : Lunar phase approximation for campaign planning
+- /qibla-direction : Privacy-first compass tool for site logistics
+- /weather-charity-distribution : Weather guidance for safe charity ops
+- /ramadan-planner : Ramadan countdown and Iftar distribution planner
+- /eid-qurbani-planner : Udhiya tracking and Eid operational checklist
+- /hajj-countdown : Dhul Hijjah giving season countdown
+- /sadqa-zakat-planner : Zakat fund separation and Sadqa operations planner
+- /islamic-glossary : Operational definitions for key Islamic terms
+
 Supported giving and operational contexts include: Eid, Eid ul Adha, Eid ul Fitr, Bakra Eid, Qurbani, Udhiya, Udhiyah, Ramadan, Ramzan, Iftar, Suhoor, Sehri, Sadqa, Sadaqah, Sadqa Fitr, Sadqa e Fitr, Zakat, Aqiqa, and Aqiqah workflows.
 
 

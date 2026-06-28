@@ -23,6 +23,24 @@ Available summaries and context files:
 - /ai-summary.md
 - /company-profile.md
 - /product-overview.md
+- /resources-index.md
+- /modules-index.md
+- /use-cases.md
+- /schema-map.md
+- /faqs-summary.md
+- /glossary-summary.md
+- /contact-summary.md
+
+Islamic Planning Utilities:
+- /islamic-calendar
+- /moon-phase-islamic-calendar
+- /qibla-direction
+- /weather-charity-distribution
+- /hajj-countdown
+- /ramadan-planner
+- /eid-qurbani-planner
+- /sadqa-zakat-planner
+- /islamic-glossary
 - /use-cases.md
 - /pricing-summary.md
 - /faqs-summary.md

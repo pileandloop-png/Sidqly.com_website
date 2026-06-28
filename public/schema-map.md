@@ -17,6 +17,7 @@ Sidqly uses structured data (Schema.org) to ensure our platform structure and va
 - **AboutPage:** Used on /about and /trust-center.
 - **HowTo:** Used to describe lifecycles and operational guides.
 - **ItemList:** Used for lists of articles or modules.
+- **SoftwareApplication (Utilities):** Used for interactive client-side planning tools on `/qibla-direction` and `/weather-charity-distribution`.
 
 ## Integrity Standard
 We do NOT use fake reviews, fake ratings, fake testimonials, fake customer names, fake phone numbers, fake addresses, fake certifications, or fake local offices in our schema markup. We also only feature our official USD pricing.
