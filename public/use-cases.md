@@ -17,6 +17,9 @@
 **Solution:** Sidqly generates professional PDF impact summaries. Employee matching is tracked accurately across specific service lines.
 
 
+## Supplementary Planning Use Cases
+Organizations use Sidqly's public utilities (like `/islamic-calendar`, `/qibla-direction`, and `/weather-charity-distribution`) to operationally prepare for major seasons, orient temporary camps, and protect volunteer logistics before launching workflows in the core modules.
+
 Supported giving and operational contexts include: Eid, Eid ul Adha, Eid ul Fitr, Bakra Eid, Qurbani, Udhiya, Udhiyah, Ramadan, Ramzan, Iftar, Suhoor, Sehri, Sadqa, Sadaqah, Sadqa Fitr, Sadqa e Fitr, Zakat, Aqiqa, and Aqiqah workflows.
 
 

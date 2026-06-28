@@ -75,14 +75,14 @@ const Footer: React.FC = () => {
                 <div>
                    <h4 className="text-xs font-bold uppercase tracking-[0.2em] text-sidqly-green-soft mb-6">Resources</h4>
                    <ul className="space-y-4 text-sm text-gray-400 font-medium">
-                      <li><Link to="/blog" className="hover:text-white transition-colors">Blog</Link></li>
-                      <li><Link to="/faqs" className="hover:text-white transition-colors">FAQs</Link></li>
-                      <li><Link to="/help" className="hover:text-white transition-colors">Help Center</Link></li>
-                      <li><Link to="/regions" className="hover:text-white transition-colors">Regions</Link></li>
-                      <li><Link to="/compare" className="hover:text-white transition-colors">Compare</Link></li>
-                      <li><Link to="/brand" className="hover:text-white transition-colors">Brand Assets</Link></li>
-                      <li><Link to="/sitemap" className="hover:text-white transition-colors">Sitemap</Link></li>
-                      <li><Link to="/request-organization" className="hover:text-white transition-colors text-sidqly-green-soft">Request Organization</Link></li>
+                      <li><Link to="/islamic-calendar" className="hover:text-white transition-colors">Islamic Calendar</Link></li>
+                      <li><Link to="/qibla-direction" className="hover:text-white transition-colors">Qibla Direction</Link></li>
+                      <li><Link to="/ramadan-planner" className="hover:text-white transition-colors">Ramadan Planner</Link></li>
+                      <li><Link to="/eid-qurbani-planner" className="hover:text-white transition-colors">Eid/Qurbani Planner</Link></li>
+                      <li><Link to="/hajj-countdown" className="hover:text-white transition-colors">Hajj Countdown</Link></li>
+                      <li><Link to="/sadqa-zakat-planner" className="hover:text-white transition-colors">Sadqa/Zakat Planner</Link></li>
+                      <li><Link to="/islamic-glossary" className="hover:text-white transition-colors">Islamic Glossary</Link></li>
+                      <li><Link to="/blog" className="hover:text-white transition-colors">Blog & FAQs</Link></li>
                    </ul>
                 </div>
              </div>

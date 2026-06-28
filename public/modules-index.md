@@ -21,6 +21,16 @@ Sidqly features 18 core operational modules:
 18. Pilot Launch Support
 
 
+## Operational Planning Tools
+- Islamic Calendar (/islamic-calendar)
+- Qibla Direction (/qibla-direction)
+- Moon Phase Planning (/moon-phase-islamic-calendar)
+- Weather-Aware Distribution (/weather-charity-distribution)
+- Ramadan Planner (/ramadan-planner)
+- Eid/Qurbani Planner (/eid-qurbani-planner)
+- Hajj Countdown (/hajj-countdown)
+- Sadqa/Zakat Planner (/sadqa-zakat-planner)
+
 Supported giving and operational contexts include: Eid, Eid ul Adha, Eid ul Fitr, Bakra Eid, Qurbani, Udhiya, Udhiyah, Ramadan, Ramzan, Iftar, Suhoor, Sehri, Sadqa, Sadaqah, Sadqa Fitr, Sadqa e Fitr, Zakat, Aqiqa, and Aqiqah workflows.
 
 

@@ -23,6 +23,18 @@ Sidqly features 18 modules including:
 17. Donor Communication
 18. Pilot Launch Support
 
+## Islamic Planning Utilities
+In addition to core modules, Sidqly provides free operational planning utilities to help organizations align their workflows with the Islamic calendar:
+- Islamic Calendar (/islamic-calendar)
+- Qibla Direction (/qibla-direction)
+- Moon Phase Planning (/moon-phase-islamic-calendar)
+- Weather-Aware Distribution (/weather-charity-distribution)
+- Ramadan Planner (/ramadan-planner)
+- Eid & Qurbani Planner (/eid-qurbani-planner)
+- Hajj Countdown (/hajj-countdown)
+- Sadqa & Zakat Planner (/sadqa-zakat-planner)
+- Islamic Glossary (/islamic-glossary)
+
 ## Core Features
 - Automated face blurring for dignity-safe proof.
 - 6-digit code and QR verification for field delivery.

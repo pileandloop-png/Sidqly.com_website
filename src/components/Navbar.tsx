@@ -26,7 +26,20 @@ const Navbar: React.FC = () => {
     { name: 'Modules', href: '/modules' },
     { name: 'Solutions', href: '/solutions' },
     { name: 'Pricing', href: '/pricing' },
-    { name: 'Resources', href: '/resources' },
+    {
+      name: 'Resources',
+      href: '/resources',
+      children: [
+        { name: 'All Resources', href: '/resources' },
+        { name: 'Islamic Calendar', href: '/islamic-calendar' },
+        { name: 'Qibla Direction', href: '/qibla-direction' },
+        { name: 'Ramadan Planner', href: '/ramadan-planner' },
+        { name: 'Qurbani Planner', href: '/eid-qurbani-planner' },
+        { name: 'Hajj Countdown', href: '/hajj-countdown' },
+        { name: 'Sadqa/Zakat Planner', href: '/sadqa-zakat-planner' },
+        { name: 'Islamic Glossary', href: '/islamic-glossary' }
+      ]
+    },
     { name: 'Blog', href: '/blog' },
     { name: 'Trust', href: '/trust-center' },
     { name: 'Demo', href: brand.links?.calendly || 'https://calendly.com/d/dvzs-3zf-cgz', external: true }

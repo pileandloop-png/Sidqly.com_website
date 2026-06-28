@@ -12,6 +12,11 @@ This summary provides answers to the most common queries about the Sidqly platfo
 - **Is payment review automatic?** No, every bank transfer/screenshot is reviewed manually for absolute accuracy.
 - **Are there automatic Zakat rulings?** No. We provide the tools, but humans make the final decisions.
 
+## Islamic Planning Utilities
+- **Does Sidqly provide official Islamic dates?** No. Sidqly provides operational planning tools for Islamic giving workflows (like the Islamic Calendar, Moon Phase Planning, Hajj Countdown, and Ramadan Planner). Islamic dates may vary by country, moon sighting, local authority, calculation method, and official announcements. Dates shown are planning estimates only.
+- **Is the Qibla Direction official?** The Qibla Direction tool provides an approximate direction for site logistics and volunteer camp layout. It does not replace official mosque alignment by certified scholars or surveyors.
+- **Does Sidqly track my location?** For tools like Qibla Direction and Weather-Aware Distribution, your location is requested only with your permission and calculated locally in your browser. Sidqly does not store, track, or send your location to analytics.
+
 ## Pricing & Logistics
 - **Where is Sidqly available?** Globally, with specialized support for UK, USA, Europe, MENA, and South Asia.
 - **How does pricing work?** Sidqly uses USD public pricing. Starter launch price is $49/month, Growth launch price is $129/month, Premium launch price is $249/month. Enterprise is custom. Annual launch prices are available. No PKR pricing appears publicly.
