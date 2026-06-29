@@ -36,6 +36,7 @@ import AISearchReadiness from './pages/AISearchReadiness';
 import Resources from './pages/Resources';
 
 // Islamic Utilities Pages
+import IslamicUtilitiesPage from './pages/islamic/IslamicUtilitiesPage';
 import IslamicCalendarPage from './pages/islamic/IslamicCalendarPage';
 import MoonPhasePage from './pages/islamic/MoonPhasePage';
 import QiblaDirectionPage from './pages/islamic/QiblaDirectionPage';
@@ -165,6 +166,7 @@ function App() {
             <Route path="alternatives/:slug" element={<CompareDetail />} />
 
             {/* Islamic Utilities Routes */}
+                        <Route path="islamic-utilities" element={<IslamicUtilitiesPage />} />
             <Route path="islamic-calendar" element={<IslamicCalendarPage />} />
             <Route path="moon-phase-islamic-calendar" element={<MoonPhasePage />} />
             <Route path="qibla-direction" element={<QiblaDirectionPage />} />

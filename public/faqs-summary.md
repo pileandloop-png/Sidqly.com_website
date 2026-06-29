@@ -40,3 +40,17 @@ Sidqly provides operational workflow support for Islamic giving campaigns. It do
   **A:** No. Sidqly does not issue Zakat rulings or determine religious eligibility. It provides the software to track your committee’s operational decisions, documentation, and workflows.
 - **Q:** Can we track both large and small Qurbani animals?
   **A:** Yes, Sidqly supports tracking individual shares (e.g., 1/7th of a cow) and whole animals (e.g., a goat or sheep).
+
+
+
+Islamic Planning Utilities:
+- /islamic-utilities
+- /islamic-calendar
+- /qibla-direction
+- /moon-phase-islamic-calendar
+- /weather-charity-distribution
+- /hajj-countdown
+- /ramadan-planner
+- /eid-qurbani-planner
+- /sadqa-zakat-planner
+- /islamic-glossary

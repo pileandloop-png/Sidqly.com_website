@@ -42,3 +42,17 @@ Sidqly provides operational workflow support for Islamic giving campaigns. It do
 - https://sidqly.com/use-cases/vendors (Service)
 - https://sidqly.com/use-cases/board-reporting-teams (Service)
 - https://sidqly.com/use-cases/community-request-organization (Service)
+
+
+
+Islamic Planning Utilities:
+- /islamic-utilities
+- /islamic-calendar
+- /qibla-direction
+- /moon-phase-islamic-calendar
+- /weather-charity-distribution
+- /hajj-countdown
+- /ramadan-planner
+- /eid-qurbani-planner
+- /sadqa-zakat-planner
+- /islamic-glossary
