@@ -1,8 +1,9 @@
 import { modules, solutions } from './solutions_modules';
+import { useCases } from './useCases';
 
 export interface SearchResult {
   id: string;
-  type: 'Module' | 'Solution' | 'Resource' | 'Blog' | 'FAQ' | 'Compare' | 'Trust' | 'Legal' | 'Page';
+  type: 'Module' | 'Solution' | 'Use Case' | 'Islamic Tool' | 'Resource' | 'Blog' | 'FAQ' | 'Compare' | 'Trust' | 'Legal' | 'Page' | 'Feature';
   title: string;
   description: string;
   url: string;
@@ -15,63 +16,63 @@ export const generateSearchIndex = (): SearchResult[] => {
   // Islamic Utilities
   index.push({
     id: 'util-islamic-calendar',
-    type: 'Page',
+    type: 'Islamic Tool',
     title: 'Islamic Calendar & Hijri Date',
     description: 'Current Islamic date, Hijri calendar planning, and countdown estimates.',
     url: '/islamic-calendar'
   });
   index.push({
     id: 'util-qibla-direction',
-    type: 'Page',
+    type: 'Islamic Tool',
     title: 'Qibla Direction Tool',
     description: 'Calculate approximate Qibla direction, compass for site logistics.',
     url: '/qibla-direction'
   });
   index.push({
     id: 'util-moon-phase',
-    type: 'Page',
+    type: 'Islamic Tool',
     title: 'Moon Phase & Lunar Planning',
     description: 'Approximate lunar phase for Islamic charity operations planning.',
     url: '/moon-phase-islamic-calendar'
   });
   index.push({
     id: 'util-weather-planning',
-    type: 'Page',
+    type: 'Islamic Tool',
     title: 'Weather-Aware Distribution Planning',
     description: 'Weather guidance for safe charity distribution and volunteer operations.',
     url: '/weather-charity-distribution'
   });
   index.push({
     id: 'util-ramadan-planner',
-    type: 'Page',
+    type: 'Islamic Tool',
     title: 'Ramadan Planner & Calendar',
     description: 'Ramadan countdown, Iftar operations checklist, and Suhoor/Sehri preparation.',
     url: '/ramadan-planner'
   });
   index.push({
     id: 'util-eid-qurbani-planner',
-    type: 'Page',
+    type: 'Islamic Tool',
     title: 'Eid & Qurbani Planner',
     description: 'Checklist for Eid ul Adha, Eid ul Fitr, Qurbani, and Udhiya operations.',
     url: '/eid-qurbani-planner'
   });
   index.push({
     id: 'util-hajj-countdown',
-    type: 'Page',
+    type: 'Islamic Tool',
     title: 'Hajj Countdown',
     description: 'Dhul Hijjah operations planner and countdown.',
     url: '/hajj-countdown'
   });
   index.push({
     id: 'util-sadqa-zakat-planner',
-    type: 'Page',
+    type: 'Islamic Tool',
     title: 'Sadqa & Zakat Planner',
     description: 'Sadqa Fitr preparation and Zakat fund separation checklists.',
     url: '/sadqa-zakat-planner'
   });
   index.push({
     id: 'util-islamic-glossary',
-    type: 'Page',
+    type: 'Islamic Tool',
     title: 'Islamic Glossary',
     description: 'Definitions of Islamic charity terms like Zakat, Sadaqah, Aqiqa/Aqiqah, and Qurbani in an operational context.',
     url: '/islamic-glossary'
@@ -128,6 +129,24 @@ export const generateSearchIndex = (): SearchResult[] => {
       title: s.title,
       description: s.desc,
       url: `/solutions/${s.slug}`
+    });
+  });
+
+  // Use Cases
+  index.push({
+    id: 'page-use-cases-index',
+    type: 'Page',
+    title: 'Use Cases Hub',
+    description: 'Explore how Sidqly supports mosques, Islamic charities, Zakat committees, Qurbani organizers, Ramadan ration teams, donors, volunteers, vendors, and corporate sponsors.',
+    url: '/use-cases'
+  });
+  useCases.forEach(uc => {
+    index.push({
+      id: `use-case-${uc.slug}`,
+      type: 'Use Case',
+      title: uc.title,
+      description: uc.shortDescription,
+      url: `/use-cases/${uc.slug}`
     });
   });
 
@@ -222,6 +241,24 @@ export const generateSearchIndex = (): SearchResult[] => {
     title: 'Aqiqa / Aqiqah Charity Workflow',
     description: 'Handle Aqiqa charity requests operationally with vendor fulfillment and reporting.',
     url: '/resources/aqiqa-charity-workflow'
+  });
+
+  // Seasonal keywords mapping (for broader search coverage)
+  index.push({
+    id: 'seasonal-keywords',
+    type: 'Resource',
+    title: 'Seasonal Giving Guides',
+    description: 'Eid, Eid 2026, Eid ul Adha, Eid ul Fitr, Bakra Eid, Qurbani, Qurbani certificate, Sadqa, Sadaqah, Sadqa Fitr, Sadqa e Fitr, Zakat, Ramadan, Ramzan, Iftar, ration packs, Aqiqa, Aqiqah.',
+    url: '/resources/eid-giving'
+  });
+
+  // Product keywords mapping
+  index.push({
+    id: 'product-keywords',
+    type: 'Feature',
+    title: 'Platform Features & Workflows',
+    description: 'verified giving, manual payment review, donor-safe proof, proof approval, audit-ready records, board reports, receipts, certificates, QR verification, vendor fulfillment, volunteer coordination, request organization.',
+    url: '/how-it-works'
   });
 
   return index;

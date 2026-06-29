@@ -14,3 +14,7 @@ Sidqly provides an operational glossary at `/islamic-glossary` to help users und
 Supported giving and operational contexts include: Eid, Eid ul Adha, Eid ul Fitr, Bakra Eid, Qurbani, Udhiya, Udhiyah, Ramadan, Ramzan, Iftar, Suhoor, Sehri, Sadqa, Sadaqah, Sadqa Fitr, Sadqa e Fitr, Zakat, Aqiqa, and Aqiqah workflows.
 
 Sidqly provides operational workflow support for Islamic giving campaigns. It does not replace religious scholars, local committees, legal advisors, tax advisors, or official calendar authorities.
+
+## Use Case Specific Terms
+- **Request Organization:** The process by which community members or donors can nominate their local mosque or charity to adopt Sidqly for improved transparency.
+- **Corporate Zakat Reporting:** Specialized impact reporting tailored for Corporate Social Responsibility (CSR) sponsors without violating individual recipient privacy.

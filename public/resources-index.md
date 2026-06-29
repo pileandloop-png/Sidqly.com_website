@@ -15,3 +15,8 @@ Supported giving and operational contexts include: Eid, Eid ul Adha, Eid ul Fitr
 
 
 Sidqly provides operational workflow support for Islamic giving campaigns. It does not replace religious scholars, local committees, legal advisors, tax advisors, or official calendar authorities.
+
+## Use Cases Hub
+Learn how Sidqly serves specific operational roles:
+- URL: https://sidqly.com/use-cases
+- Topics: Mosques, Islamic Charities, Zakat Committees, Qurbani Organizers, Ramadan Ration Teams, Sadaqah Campaign Teams, Corporate Sponsors, Donors, Volunteers, Vendors, Board & Reporting Teams, Community Request Organization.

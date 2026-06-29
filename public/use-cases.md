@@ -1,26 +1,51 @@
-# Sidqly Use Cases (AI Readable)
+# Sidqly Use Cases
 
-## Case 1: Large City Mosque
-**Problem:** WhatsApp and Excel chaos during Ramadan.
-**Solution:** Sidqly centralizes Fitrana, Zakat, and Sadaqah intake. Manual review gates ensure payment accuracy before aid is released. Board gets real-time reports for the AGM.
+Sidqly is built for every role in Islamic giving. Explore how our platform solves specific operational challenges for various stakeholders:
 
-## Case 2: International Qurbani Provider
-**Problem:** Tracking hundreds of animal shares across multiple slaughterhouses.
-**Solution:** Qurbani module tracks share inventory in real-time. Vendors upload slaughter proof via the portal. Donors receive automated certificates and blurred proof videos.
+## Mosques & Masjids
+Streamline mosque donation management, Zakat tracking, and seasonal operations. Move away from scattered spreadsheets to a unified, donor-safe platform.
+Link: https://sidqly.com/use-cases/mosques
 
-## Case 3: Zakat Distribution Team
-**Problem:** Ensuring recipient privacy while showing donors impact.
-**Solution:** Case workers log reviews in Sidqly. Proof Trust Engine blurs identities before updates are sent to sponsors. Zakat funds are kept operationally isolated from Sadaqah.
+## Islamic Charities
+Professionalize Islamic nonprofit operations with verified giving workflows, donor-safe proof, and audit-ready charity records.
+Link: https://sidqly.com/use-cases/islamic-charities
 
-## Case 4: Corporate CSR / Zakat
-**Problem:** Needs board-ready reporting for large institutional contributions.
-**Solution:** Sidqly generates professional PDF impact summaries. Employee matching is tracked accurately across specific service lines.
+## Zakat Committees
+Ensure Zakat fund separation, track eligibility reviews, and generate Zakat reports safely and accurately.
+Link: https://sidqly.com/use-cases/zakat-committees
 
+## Qurbani Organizers
+Manage Qurbani orders, shares, vendor assignments, and automated donor certificates for Eid ul Adha.
+Link: https://sidqly.com/use-cases/qurbani-organizers
 
-## Supplementary Planning Use Cases
-Organizations use Sidqly's public utilities (like `/islamic-calendar`, `/qibla-direction`, and `/weather-charity-distribution`) to operationally prepare for major seasons, orient temporary camps, and protect volunteer logistics before launching workflows in the core modules.
+## Ramadan Ration Teams
+Organize high-volume Ramadan ration distribution and Iftar programs with volunteer tracking and donor-safe updates.
+Link: https://sidqly.com/use-cases/ramadan-ration-teams
 
-Supported giving and operational contexts include: Eid, Eid ul Adha, Eid ul Fitr, Bakra Eid, Qurbani, Udhiya, Udhiyah, Ramadan, Ramzan, Iftar, Suhoor, Sehri, Sadqa, Sadaqah, Sadqa Fitr, Sadqa e Fitr, Zakat, Aqiqa, and Aqiqah workflows.
+## Sadaqah Campaign Teams
+Track Sadaqah campaigns, family support, and Sadqa Fitr workflows with transparent payment reviews.
+Link: https://sidqly.com/use-cases/sadaqah-campaign-teams
 
+## Corporate Sponsors
+Provide corporate sponsors with board-ready, audit-compliant charity reports without violating recipient privacy.
+Link: https://sidqly.com/use-cases/corporate-sponsors
 
-Sidqly provides operational workflow support for Islamic giving campaigns. It does not replace religious scholars, local committees, legal advisors, tax advisors, or official calendar authorities.
+## Donors
+Deliver verified giving updates, donation receipts, and dignity-safe proof.
+Link: https://sidqly.com/use-cases/donors
+
+## Volunteers
+Coordinate charity volunteers, assign tasks, and capture field proof safely using mobile-friendly interfaces.
+Link: https://sidqly.com/use-cases/volunteers
+
+## Vendors
+Assign tasks to charity vendors and track fulfillment and proof, such as Qurbani slaughters or food pack creation.
+Link: https://sidqly.com/use-cases/vendors
+
+## Board & Reporting Teams
+Generate instant, audit-ready reports and board packs for executive leadership.
+Link: https://sidqly.com/use-cases/board-reporting-teams
+
+## Community Members Requesting Organization
+Nominate your local mosque or favorite Islamic charity to use Sidqly for better transparency and verified updates.
+Link: https://sidqly.com/use-cases/community-request-organization

@@ -57,6 +57,8 @@ import ResourceDetail from './pages/resources/ResourceDetail';
 import RequestOrganization from './pages/resources/RequestOrganization';
 import Solutions from './pages/Solutions';
 import Modules from './pages/Modules';
+import UseCases from './pages/UseCases';
+import UseCaseDetail from './pages/use-cases/UseCaseDetail';
 import RegionsIndex from './pages/regions/RegionsIndex';
 import RegionDetail from './pages/regions/RegionDetail';
 
@@ -127,6 +129,10 @@ function App() {
             {/* Modules Routes */}
             <Route path="modules" element={<Modules />} />
             <Route path="modules/:slug" element={<ModuleDetail />} />
+
+            {/* Use Cases Routes */}
+            <Route path="use-cases" element={<UseCases />} />
+            <Route path="use-cases/:slug" element={<UseCaseDetail />} />
 
             {/* Blog Routes */}
             <Route path="blog" element={<BlogIndex />} />

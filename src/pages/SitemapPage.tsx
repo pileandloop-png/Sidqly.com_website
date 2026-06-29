@@ -13,6 +13,7 @@ const SitemapPage: React.FC = () => {
     { name: 'Features', path: '/features', icon: Star },
     { name: 'How It Works', path: '/how-it-works', icon: Zap },
     { name: 'Modules', path: '/modules', icon: Settings },
+    { name: 'Use Cases', path: '/use-cases', icon: Target },
     { name: 'Pricing', path: '/pricing', icon: CreditCard },
     { name: 'Book Demo', path: '/book-demo', icon: Users },
     { name: 'Trust Center', path: '/trust-center', icon: Shield },
@@ -36,6 +37,22 @@ const SitemapPage: React.FC = () => {
     { name: 'Africa', path: '/regions/africa' },
   ];
 
+  const useCasePages = [
+    { name: 'All Use Cases', path: '/use-cases' },
+    { name: 'Mosques', path: '/use-cases/mosques' },
+    { name: 'Islamic Charities', path: '/use-cases/islamic-charities' },
+    { name: 'Zakat Committees', path: '/use-cases/zakat-committees' },
+    { name: 'Qurbani Organizers', path: '/use-cases/qurbani-organizers' },
+    { name: 'Ramadan Ration Teams', path: '/use-cases/ramadan-ration-teams' },
+    { name: 'Sadaqah Campaign Teams', path: '/use-cases/sadaqah-campaign-teams' },
+    { name: 'Corporate Sponsors', path: '/use-cases/corporate-sponsors' },
+    { name: 'Donors', path: '/use-cases/donors' },
+    { name: 'Volunteers', path: '/use-cases/volunteers' },
+    { name: 'Vendors', path: '/use-cases/vendors' },
+    { name: 'Board & Reporting Teams', path: '/use-cases/board-reporting-teams' },
+    { name: 'Request Organization', path: '/use-cases/community-request-organization' }
+  ];
+
   const solutionPages = [
     { name: 'All Solutions', path: '/solutions' },
     { name: 'Mosques', path: '/solutions/mosques' },
@@ -48,6 +65,19 @@ const SitemapPage: React.FC = () => {
     { name: 'Volunteers', path: '/solutions/volunteers' },
     { name: 'Community Welfare', path: '/solutions/community-welfare-teams' },
     { name: 'Donors', path: '/solutions/donors' },
+  ];
+
+  const islamicToolsPages = [
+    { name: 'Islamic Utilities', path: '/islamic-utilities' },
+    { name: 'Islamic Calendar', path: '/islamic-calendar' },
+    { name: 'Qibla Direction', path: '/qibla-direction' },
+    { name: 'Moon Phase', path: '/moon-phase-islamic-calendar' },
+    { name: 'Weather-Aware Distribution', path: '/weather-charity-distribution' },
+    { name: 'Hajj Countdown', path: '/hajj-countdown' },
+    { name: 'Ramadan Planner', path: '/ramadan-planner' },
+    { name: 'Eid/Qurbani Planner', path: '/eid-qurbani-planner' },
+    { name: 'Sadqa/Zakat Planner', path: '/sadqa-zakat-planner' },
+    { name: 'Islamic Glossary', path: '/islamic-glossary' }
   ];
 
   const schema = {
@@ -92,9 +122,29 @@ const SitemapPage: React.FC = () => {
               <h2 className="text-lg font-bold mb-6 flex items-center gap-2 border-b border-gray-200 pb-2">
                 <MapPin size={20} className="text-sidqly-green-emerald" /> Product & Solutions
               </h2>
+              <h3 className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-3">Use Cases</h3>
+              <ul className="space-y-3 mb-8">
+                {useCasePages.map(page => (
+                  <li key={page.path}>
+                    <Link to={page.path} className="text-gray-600 hover:text-sidqly-green-emerald transition-colors flex items-center gap-2 text-sm group">
+                      <ChevronRight size={14} className="group-hover:translate-x-1 transition-transform" /> {page.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
               <h3 className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-3">Stakeholder Solutions</h3>
               <ul className="space-y-3 mb-8">
                 {solutionPages.map(page => (
+                  <li key={page.path}>
+                    <Link to={page.path} className="text-gray-600 hover:text-sidqly-green-emerald transition-colors flex items-center gap-2 text-sm group">
+                      <ChevronRight size={14} className="group-hover:translate-x-1 transition-transform" /> {page.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+              <h3 className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-3">Islamic Tools</h3>
+              <ul className="space-y-3 mb-8">
+                {islamicToolsPages.map(page => (
                   <li key={page.path}>
                     <Link to={page.path} className="text-gray-600 hover:text-sidqly-green-emerald transition-colors flex items-center gap-2 text-sm group">
                       <ChevronRight size={14} className="group-hover:translate-x-1 transition-transform" /> {page.name}

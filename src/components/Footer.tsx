@@ -33,15 +33,18 @@ const Footer: React.FC = () => {
           <div className="grid grid-cols-2 gap-8 lg:col-span-3">
              <div className="space-y-12">
                 <div>
-                   <h4 className="text-xs font-bold uppercase tracking-[0.2em] text-sidqly-green-soft mb-6">Product</h4>
+                   <h4 className="text-xs font-bold uppercase tracking-[0.2em] text-sidqly-green-soft mb-6">Product & Resources</h4>
                    <ul className="space-y-4 text-sm text-gray-400 font-medium">
                       <li><Link to="/features" className="hover:text-white transition-colors">Features</Link></li>
                       <li><Link to="/modules" className="hover:text-white transition-colors">Modules</Link></li>
-                      <li><Link to="/how-it-works" className="hover:text-white transition-colors">How It Works</Link></li>
+                      <li><Link to="/use-cases" className="hover:text-white transition-colors">Use Cases Hub</Link></li>
                       <li><Link to="/pricing" className="hover:text-white transition-colors">Pricing</Link></li>
-                      <li><Link to="/purchase" className="hover:text-white transition-colors">Purchase</Link></li>
-                      <li><Link to="/start-pilot" className="hover:text-white transition-colors">Start Pilot</Link></li>
-                      <li><Link to="/implementation" className="hover:text-white transition-colors">Implementation</Link></li>
+                      <li><Link to="/compare" className="hover:text-white transition-colors">Compare</Link></li>
+                      <li><Link to="/request-organization" className="hover:text-white transition-colors">Request Organization</Link></li>
+                      <li><Link to="/resources" className="hover:text-white transition-colors">Resources Hub</Link></li>
+                      <li><Link to="/resources/eid-giving" className="hover:text-white transition-colors">Seasonal Giving Guides</Link></li>
+                      <li><Link to="/blog" className="hover:text-white transition-colors">Blog</Link></li>
+                      <li><Link to="/sitemap" className="hover:text-white transition-colors">Sitemap</Link></li>
                    </ul>
                 </div>
                 <div>
@@ -60,29 +63,30 @@ const Footer: React.FC = () => {
 
              <div className="space-y-12">
                 <div>
-                   <h4 className="text-xs font-bold uppercase tracking-[0.2em] text-sidqly-green-soft mb-6">Solutions</h4>
+                   <h4 className="text-xs font-bold uppercase tracking-[0.2em] text-sidqly-green-soft mb-6">Use Cases</h4>
                    <ul className="space-y-4 text-sm text-gray-400 font-medium">
-                      <li><Link to="/solutions/mosques" className="hover:text-white transition-colors">Mosques</Link></li>
-                      <li><Link to="/solutions/islamic-charities" className="hover:text-white transition-colors">Islamic Charities</Link></li>
-                      <li><Link to="/solutions/qurbani-providers" className="hover:text-white transition-colors">Qurbani Providers</Link></li>
-                      <li><Link to="/solutions/ramadan-food-drives" className="hover:text-white transition-colors">Ramadan Drives</Link></li>
-                      <li><Link to="/solutions/zakat-teams" className="hover:text-white transition-colors">Zakat Teams</Link></li>
-                      <li><Link to="/solutions/corporate-csr-zakat" className="hover:text-white transition-colors">Corporate CSR</Link></li>
-                      <li><Link to="/solutions/vendors" className="hover:text-white transition-colors">Vendors</Link></li>
-                      <li><Link to="/solutions/volunteers" className="hover:text-white transition-colors">Volunteers</Link></li>
+                      <li><Link to="/use-cases/mosques" className="hover:text-white transition-colors">Mosques</Link></li>
+                      <li><Link to="/use-cases/islamic-charities" className="hover:text-white transition-colors">Islamic Charities</Link></li>
+                      <li><Link to="/use-cases/zakat-committees" className="hover:text-white transition-colors">Zakat Committees</Link></li>
+                      <li><Link to="/use-cases/qurbani-organizers" className="hover:text-white transition-colors">Qurbani Organizers</Link></li>
+                      <li><Link to="/use-cases/ramadan-ration-teams" className="hover:text-white transition-colors">Ramadan Ration Teams</Link></li>
+                      <li><Link to="/use-cases/corporate-sponsors" className="hover:text-white transition-colors">Corporate Sponsors</Link></li>
+                      <li><Link to="/use-cases/donors" className="hover:text-white transition-colors">Donors</Link></li>
+                      <li><Link to="/use-cases/volunteers" className="hover:text-white transition-colors">Volunteers</Link></li>
                    </ul>
                 </div>
                 <div>
-                   <h4 className="text-xs font-bold uppercase tracking-[0.2em] text-sidqly-green-soft mb-6">Resources</h4>
+                   <h4 className="text-xs font-bold uppercase tracking-[0.2em] text-sidqly-green-soft mb-6">Islamic Tools</h4>
                    <ul className="space-y-4 text-sm text-gray-400 font-medium">
                       <li><Link to="/islamic-calendar" className="hover:text-white transition-colors">Islamic Calendar</Link></li>
                       <li><Link to="/qibla-direction" className="hover:text-white transition-colors">Qibla Direction</Link></li>
+                      <li><Link to="/moon-phase-islamic-calendar" className="hover:text-white transition-colors">Moon Phase</Link></li>
+                      <li><Link to="/weather-charity-distribution" className="hover:text-white transition-colors">Weather-Aware Distribution</Link></li>
                       <li><Link to="/ramadan-planner" className="hover:text-white transition-colors">Ramadan Planner</Link></li>
                       <li><Link to="/eid-qurbani-planner" className="hover:text-white transition-colors">Eid/Qurbani Planner</Link></li>
                       <li><Link to="/hajj-countdown" className="hover:text-white transition-colors">Hajj Countdown</Link></li>
                       <li><Link to="/sadqa-zakat-planner" className="hover:text-white transition-colors">Sadqa/Zakat Planner</Link></li>
                       <li><Link to="/islamic-glossary" className="hover:text-white transition-colors">Islamic Glossary</Link></li>
-                      <li><Link to="/blog" className="hover:text-white transition-colors">Blog & FAQs</Link></li>
                    </ul>
                 </div>
              </div>
