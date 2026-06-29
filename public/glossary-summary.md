@@ -18,3 +18,17 @@ Sidqly provides operational workflow support for Islamic giving campaigns. It do
 ## Use Case Specific Terms
 - **Request Organization:** The process by which community members or donors can nominate their local mosque or charity to adopt Sidqly for improved transparency.
 - **Corporate Zakat Reporting:** Specialized impact reporting tailored for Corporate Social Responsibility (CSR) sponsors without violating individual recipient privacy.
+
+
+
+Islamic Planning Utilities:
+- /islamic-utilities
+- /islamic-calendar
+- /qibla-direction
+- /moon-phase-islamic-calendar
+- /weather-charity-distribution
+- /hajj-countdown
+- /ramadan-planner
+- /eid-qurbani-planner
+- /sadqa-zakat-planner
+- /islamic-glossary

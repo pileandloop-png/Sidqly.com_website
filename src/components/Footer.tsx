@@ -78,6 +78,7 @@ const Footer: React.FC = () => {
                 <div>
                    <h4 className="text-xs font-bold uppercase tracking-[0.2em] text-sidqly-green-soft mb-6">Islamic Tools</h4>
                    <ul className="space-y-4 text-sm text-gray-400 font-medium">
+                                            <li><Link to="/islamic-utilities" className="hover:text-white transition-colors">Islamic Utilities</Link></li>
                       <li><Link to="/islamic-calendar" className="hover:text-white transition-colors">Islamic Calendar</Link></li>
                       <li><Link to="/qibla-direction" className="hover:text-white transition-colors">Qibla Direction</Link></li>
                       <li><Link to="/moon-phase-islamic-calendar" className="hover:text-white transition-colors">Moon Phase</Link></li>

@@ -13,7 +13,15 @@ export const generateSearchIndex = (): SearchResult[] => {
   const index: SearchResult[] = [];
 
   // Core Pages
+
   // Islamic Utilities
+  index.push({
+    id: 'util-islamic-utilities',
+    type: 'Islamic Tool',
+    title: 'Islamic Utilities',
+    description: 'Islamic Tools Hub for Ramadan, Qurbani, Zakat, Sadqa, and general planning utilities.',
+    url: '/islamic-utilities'
+  });
   index.push({
     id: 'util-islamic-calendar',
     type: 'Islamic Tool',

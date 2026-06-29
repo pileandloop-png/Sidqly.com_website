@@ -286,8 +286,9 @@ const Home: React.FC = () => {
          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid lg:grid-cols-2 gap-16">
                <div>
-                  <h2 className="text-3xl font-extrabold text-sidqly-navy mb-8">Islamic tools for giving teams</h2>
-                  <div className="grid sm:grid-cols-2 gap-4">
+                  <h2 className="text-3xl font-extrabold text-sidqly-navy mb-4">Islamic tools for giving teams</h2>
+                  <p className="text-gray-600 mb-8">Plan Ramadan, Qurbani, Sadqa, Zakat, Hajj-linked giving, Qibla direction, Hijri date awareness, and weather-aware distribution with practical tools built for Islamic charity operations.</p>
+                  <div className="grid sm:grid-cols-2 gap-4 mb-8">
                      <Link to="/islamic-calendar" className="p-6 rounded-2xl bg-sidqly-ivory border border-gray-100 hover:border-sidqly-green-soft transition-colors group">
                         <h4 className="font-bold text-sidqly-navy group-hover:text-sidqly-green-deep">Islamic Calendar</h4>
                         <p className="text-sm text-gray-500 mt-2">Hijri dates for operations.</p>
@@ -296,23 +297,32 @@ const Home: React.FC = () => {
                         <h4 className="font-bold text-sidqly-navy group-hover:text-sidqly-green-deep">Qibla Direction</h4>
                         <p className="text-sm text-gray-500 mt-2">Logistics compass.</p>
                      </Link>
+                     <Link to="/hajj-countdown" className="p-6 rounded-2xl bg-sidqly-ivory border border-gray-100 hover:border-sidqly-green-soft transition-colors group">
+                        <h4 className="font-bold text-sidqly-navy group-hover:text-sidqly-green-deep">Hajj Countdown</h4>
+                        <p className="text-sm text-gray-500 mt-2">Dhul Hijjah prep.</p>
+                     </Link>
                      <Link to="/ramadan-planner" className="p-6 rounded-2xl bg-sidqly-ivory border border-gray-100 hover:border-sidqly-green-soft transition-colors group">
                         <h4 className="font-bold text-sidqly-navy group-hover:text-sidqly-green-deep">Ramadan Planner</h4>
                         <p className="text-sm text-gray-500 mt-2">Iftar tracking checklists.</p>
                      </Link>
                      <Link to="/eid-qurbani-planner" className="p-6 rounded-2xl bg-sidqly-ivory border border-gray-100 hover:border-sidqly-green-soft transition-colors group">
-                        <h4 className="font-bold text-sidqly-navy group-hover:text-sidqly-green-deep">Qurbani Planner</h4>
+                        <h4 className="font-bold text-sidqly-navy group-hover:text-sidqly-green-deep">Eid/Qurbani Planner</h4>
                         <p className="text-sm text-gray-500 mt-2">Share and slaughter guides.</p>
-                     </Link>
-                     <Link to="/hajj-countdown" className="p-6 rounded-2xl bg-sidqly-ivory border border-gray-100 hover:border-sidqly-green-soft transition-colors group">
-                        <h4 className="font-bold text-sidqly-navy group-hover:text-sidqly-green-deep">Hajj Countdown</h4>
-                        <p className="text-sm text-gray-500 mt-2">Dhul Hijjah prep.</p>
                      </Link>
                      <Link to="/sadqa-zakat-planner" className="p-6 rounded-2xl bg-sidqly-ivory border border-gray-100 hover:border-sidqly-green-soft transition-colors group">
                         <h4 className="font-bold text-sidqly-navy group-hover:text-sidqly-green-deep">Sadqa/Zakat Planner</h4>
                         <p className="text-sm text-gray-500 mt-2">Fund separation guides.</p>
                      </Link>
+                     <Link to="/islamic-glossary" className="p-6 rounded-2xl bg-sidqly-ivory border border-gray-100 hover:border-sidqly-green-soft transition-colors group sm:col-span-2">
+                        <h4 className="font-bold text-sidqly-navy group-hover:text-sidqly-green-deep">Islamic Glossary</h4>
+                        <p className="text-sm text-gray-500 mt-2">Key operational terms defined.</p>
+                     </Link>
                   </div>
+                  <div className="flex gap-4">
+                     <Link to="/islamic-utilities" className="bg-sidqly-green-deep text-white px-6 py-3 rounded-xl font-bold hover:shadow-lg transition-all">Explore Islamic Tools</Link>
+                     <Link to="/resources" className="bg-sidqly-ivory text-sidqly-navy border border-gray-200 px-6 py-3 rounded-xl font-bold hover:bg-gray-50 transition-all">View Resources</Link>
+                  </div>
+
                </div>
 
                <div>

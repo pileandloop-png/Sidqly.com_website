@@ -49,3 +49,17 @@ Link: https://sidqly.com/use-cases/board-reporting-teams
 ## Community Members Requesting Organization
 Nominate your local mosque or favorite Islamic charity to use Sidqly for better transparency and verified updates.
 Link: https://sidqly.com/use-cases/community-request-organization
+
+
+
+Islamic Planning Utilities:
+- /islamic-utilities
+- /islamic-calendar
+- /qibla-direction
+- /moon-phase-islamic-calendar
+- /weather-charity-distribution
+- /hajj-countdown
+- /ramadan-planner
+- /eid-qurbani-planner
+- /sadqa-zakat-planner
+- /islamic-glossary
